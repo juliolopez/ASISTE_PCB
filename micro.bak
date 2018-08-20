@@ -1,0 +1,743 @@
+EESchema Schematic File Version 4
+LIBS:ASISTE-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 6
+Title "Microcontroller"
+Date "2018-08-15"
+Rev "v1.0"
+Comp "ASISTE"
+Comment1 "Julio López Moya"
+Comment2 "ASISTE"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Asiste:GND #PWR?
+U 1 1 5B350E7E
+P 2100 5400
+F 0 "#PWR?" H 2100 5150 50  0001 C CNN
+F 1 "GND" H 2100 5250 50  0000 C CNN
+F 2 "" H 2100 5400 50  0001 C CNN
+F 3 "" H 2100 5400 50  0001 C CNN
+	1    2100 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Asiste:GND #PWR?
+U 1 1 5B350ED6
+P 3350 4900
+F 0 "#PWR?" H 3350 4650 50  0001 C CNN
+F 1 "GND" V 3350 4700 50  0000 C CNN
+F 2 "" H 3350 4900 50  0001 C CNN
+F 3 "" H 3350 4900 50  0001 C CNN
+	1    3350 4900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Asiste:GND #PWR?
+U 1 1 5B350EF8
+P 2750 4900
+F 0 "#PWR?" H 2750 4650 50  0001 C CNN
+F 1 "GND" V 2750 4700 50  0000 C CNN
+F 2 "" H 2750 4900 50  0001 C CNN
+F 3 "" H 2750 4900 50  0001 C CNN
+	1    2750 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L Asiste:+3V3 #PWR?
+U 1 1 5B3521AC
+P 5600 1200
+AR Path="/5B3521AC" Ref="#PWR?"  Part="1" 
+AR Path="/5B261506/5B3521AC" Ref="#PWR?"  Part="1" 
+AR Path="/5B56C637/5B3521AC" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5600 1050 50  0001 C CNN
+F 1 "+3V3" H 5600 1340 50  0000 C CNN
+F 2 "" H 5600 1200 50  0001 C CNN
+F 3 "" H 5600 1200 50  0001 C CNN
+	1    5600 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Asiste:GND #PWR?
+U 1 1 5B352220
+P 5150 6500
+F 0 "#PWR?" H 5150 6250 50  0001 C CNN
+F 1 "GND" H 5150 6350 50  0000 C CNN
+F 2 "" H 5150 6500 50  0001 C CNN
+F 3 "" H 5150 6500 50  0001 C CNN
+	1    5150 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Asiste:GND #PWR?
+U 1 1 5B352845
+P 3700 2350
+F 0 "#PWR?" H 3700 2100 50  0001 C CNN
+F 1 "GND" H 3700 2200 50  0000 C CNN
+F 2 "" H 3700 2350 50  0001 C CNN
+F 3 "" H 3700 2350 50  0001 C CNN
+	1    3700 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Asiste:Crystal_GND24_2520 Y?
+U 1 1 5B3704C6
+P 3050 4900
+F 0 "Y?" V 2900 4950 50  0000 L CNN
+F 1 "Crystal_GND24_2520" H 2800 4150 50  0001 L CNN
+F 2 "ASISTE:Crystal_SMD_2520-4pin_2.5x2.0mm" H 3150 4400 50  0001 C CNN
+F 3 "https://www.mouser.es/datasheet/2/122/ECX-2236Q-938171.pdf" H 3100 4600 50  0001 C CNN
+F 4 "ECS-160-10-36Q-ES-TR" H 3100 4250 60  0001 C CNN "man#"
+F 5 "16MHz" H 3100 4500 50  0001 C CNN "Frecuency"
+	1    3050 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L Asiste:C_0402_12pF C?
+U 1 1 5B370614
+P 2600 4550
+F 0 "C?" V 2500 4400 50  0000 L CNN
+F 1 "C_0402_12pF" H 2350 4000 50  0001 L CNN
+F 2 "ASISTE:C_0402" H 2650 4300 50  0001 C CNN
+F 3 "https://www.mouser.es/datasheet/2/281/GCM1555C1H120GA16-01-1064161.pdf" H 3150 4200 50  0001 C CNN
+F 4 "GCM1555C1H120GA16D" H 2600 4100 60  0001 C CNN "man#"
+F 5 "12pF" V 2500 4650 50  0000 L CNN "Capacitance"
+F 6 "50V" H 2550 3900 50  0001 L CNN "Voltage"
+	1    2600 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L Asiste:C_0402_12pF C?
+U 1 1 5B3706F1
+P 2600 5300
+F 0 "C?" V 2500 5150 50  0000 L CNN
+F 1 "C_0402_12pF" H 2350 4750 50  0001 L CNN
+F 2 "ASISTE:C_0402" H 2650 5050 50  0001 C CNN
+F 3 "https://www.mouser.es/datasheet/2/281/GCM1555C1H120GA16-01-1064161.pdf" H 3150 4950 50  0001 C CNN
+F 4 "GCM1555C1H120GA16D" H 2600 4850 60  0001 C CNN "man#"
+F 5 "12pF" V 2500 5400 50  0000 L CNN "Capacitance"
+F 6 "50V" H 2550 4650 50  0001 L CNN "Voltage"
+	1    2600 5300
+	0    1    1    0   
+$EndComp
+$Comp
+L Asiste:C_0402_100nF C?
+U 1 1 5B37082F
+P 4350 2250
+F 0 "C?" V 4300 2100 50  0000 L CNN
+F 1 "C_0402_100nF" H 4100 1700 50  0001 L CNN
+F 2 "ASISTE:C_0402" H 4400 2000 50  0001 C CNN
+F 3 "https://www.mouser.es/datasheet/2/281/murata_03122018_GCM_Series-1310150.pdf" H 4900 1900 50  0001 C CNN
+F 4 "GCM155R71C104KA55D" H 4350 1800 60  0001 C CNN "man#"
+F 5 "100nF" V 4300 2350 50  0000 L CNN "Capacitance"
+F 6 "16V" H 4300 1600 50  0001 L CNN "Voltage"
+	1    4350 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L Asiste:C_0402_47nF C?
+U 1 1 5B3708DB
+P 4350 2000
+F 0 "C?" V 4300 1850 50  0000 L CNN
+F 1 "C_0402_47nF" H 4150 1450 50  0001 L CNN
+F 2 "ASISTE:C_0402" H 4400 1750 50  0001 C CNN
+F 3 "https://www.mouser.es/datasheet/2/445/885012205054-554192.pdf" H 4900 1650 50  0001 C CNN
+F 4 "885012205054" H 4350 1550 60  0001 C CNN "man#"
+F 5 "47nF" V 4300 2100 50  0000 L CNN "Capacitance"
+F 6 "25V" H 4300 1350 50  0001 L CNN "Voltage"
+	1    4350 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L Asiste:L_0603_10uH L?
+U 1 1 5B3710C0
+P 6150 2650
+F 0 "L?" V 6250 2650 50  0000 L CNN
+F 1 "L_0603_10uH" H 6200 2100 50  0001 C CNN
+F 2 "ASISTE:L_0603" H 6150 2300 50  0001 C CNN
+F 3 "https://www.mouser.es/datasheet/2/400/nductor_commercial_decoupling_mlz1608_en-837720.pdf" H 6050 2200 50  0001 C CNN
+F 4 "MLZ1608E100MT" H 6150 2400 60  0001 C CNN "man#"
+F 5 "10uH" V 6100 2550 50  0000 L CNN "Inductance"
+	1    6150 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Asiste:L_0402_15nH L?
+U 1 1 5B371352
+P 6650 2650
+F 0 "L?" V 6750 2650 50  0000 L CNN
+F 1 "L_0402_15nH" H 6650 2100 50  0001 C CNN
+F 2 "ASISTE:L_0402" H 6650 2300 50  0001 C CNN
+F 3 "https://www.mouser.es/datasheet/2/400/nductor_commercial_high-frequency_mlk1005_en-918318.pdf" H 6550 2200 50  0001 C CNN
+F 4 "MLK1005S15NJ" H 6650 2400 60  0001 C CNN "man#"
+F 5 "15nH" V 6600 2550 50  0000 L CNN "Inductance"
+	1    6650 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Asiste:C_0603_1uF C?
+U 1 1 5B371645
+P 7100 2650
+F 0 "C?" V 7050 2500 50  0000 L CNN
+F 1 "C_0603_1uF" H 6900 2100 50  0001 L CNN
+F 2 "ASISTE:C_0603" H 7150 2400 50  0001 C CNN
+F 3 "https://www.mouser.es/datasheet/2/396/mlcc02_e-1307760.pdf" H 7650 2300 50  0001 C CNN
+F 4 "LMK107B7105KAHT" H 7100 2200 60  0001 C CNN "man#"
+F 5 "1uF" V 7050 2750 50  0000 L CNN "Capacitance"
+F 6 "10V" H 7100 2200 60  0001 C CNN "Voltage"
+	1    7100 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Asiste:GND #PWR?
+U 1 1 5B3718AE
+P 7350 2700
+F 0 "#PWR?" H 7350 2450 50  0001 C CNN
+F 1 "GND" H 7350 2550 50  0000 C CNN
+F 2 "" H 7350 2700 50  0001 C CNN
+F 3 "" H 7350 2700 50  0001 C CNN
+	1    7350 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Asiste:C_0402_1nF C?
+U 1 1 5B371AE1
+P 4350 1250
+F 0 "C?" V 4300 1100 50  0000 L CNN
+F 1 "C_0402_1nF" H 4150 700 50  0001 L CNN
+F 2 "ASISTE:C_0402" H 4400 1000 50  0001 C CNN
+F 3 "https://www.mouser.es/datasheet/2/445/885012205006-611013.pdf" H 4900 900 50  0001 C CNN
+F 4 "885012205006" H 4350 800 60  0001 C CNN "man#"
+F 5 "1nF" V 4300 1300 50  0000 L CNN "Capacitance"
+F 6 "10V" H 4300 600 50  0001 L CNN "Voltage"
+	1    4350 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L Asiste:C_0603_4.7uF C?
+U 1 1 5B371CAF
+P 4350 1750
+F 0 "C?" V 4300 1600 50  0000 L CNN
+F 1 "C_0603_4.7uF" H 4150 1200 50  0001 L CNN
+F 2 "ASISTE:C_0603" H 4400 1500 50  0001 C CNN
+F 3 "https://www.mouser.es/datasheet/2/400/lcc_commercial_soft_en-520032.pdf" H 4900 1400 50  0001 C CNN
+F 4 "C1608X5R1A475K080AE" H 4350 1300 60  0001 C CNN "man#"
+F 5 "4.7uF" V 4300 1850 50  0000 L CNN "Capacitance"
+F 6 "10V" H 4350 1100 60  0001 C CNN "Voltage"
+	1    4350 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L Asiste:C_0402_100nF C?
+U 1 1 5B372252
+P 4350 1500
+F 0 "C?" V 4300 1350 50  0000 L CNN
+F 1 "C_0402_100nF" H 4100 950 50  0001 L CNN
+F 2 "ASISTE:C_0402" H 4400 1250 50  0001 C CNN
+F 3 "https://www.mouser.es/datasheet/2/281/murata_03122018_GCM_Series-1310150.pdf" H 4900 1150 50  0001 C CNN
+F 4 "GCM155R71C104KA55D" H 4350 1050 60  0001 C CNN "man#"
+F 5 "100nF" V 4300 1600 50  0000 L CNN "Capacitance"
+F 6 "16V" H 4300 850 50  0001 L CNN "Voltage"
+	1    4350 1500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2750 4550 3050 4550
+Wire Wire Line
+	3050 4550 3050 4750
+Wire Wire Line
+	3050 5050 3050 5300
+Wire Wire Line
+	2750 5300 3050 5300
+Wire Wire Line
+	2450 4550 2100 4550
+Wire Wire Line
+	2100 4550 2100 5300
+Wire Wire Line
+	2100 5300 2450 5300
+Connection ~ 2100 5300
+Connection ~ 3050 4550
+Wire Wire Line
+	4500 4900 4350 4900
+Connection ~ 3050 5300
+Wire Wire Line
+	5600 2750 5700 2750
+Wire Wire Line
+	5700 2750 5700 2800
+Connection ~ 5600 2750
+Wire Wire Line
+	5150 6400 5150 6450
+Wire Wire Line
+	5350 6450 5350 6400
+Wire Wire Line
+	5150 6450 5250 6450
+Connection ~ 5150 6450
+Wire Wire Line
+	5250 6450 5250 6400
+Connection ~ 5250 6450
+Connection ~ 5350 6450
+Wire Wire Line
+	4500 2000 4950 2000
+Wire Wire Line
+	4500 2250 4850 2250
+Wire Wire Line
+	3700 2000 4200 2000
+Wire Wire Line
+	3700 1250 3700 1500
+Wire Wire Line
+	3700 2250 4200 2250
+Wire Wire Line
+	6000 2650 5900 2650
+Wire Wire Line
+	5900 2650 5900 2800
+Wire Wire Line
+	5600 6450 5600 6400
+Wire Wire Line
+	6300 2650 6500 2650
+Wire Wire Line
+	6800 2650 6950 2650
+Wire Wire Line
+	7250 2650 7350 2650
+Wire Wire Line
+	4500 1750 5150 1750
+Wire Wire Line
+	4200 1750 3700 1750
+Wire Wire Line
+	4200 1500 3700 1500
+Wire Wire Line
+	5150 1750 5150 2800
+Connection ~ 5250 1750
+Wire Wire Line
+	4200 1250 3700 1250
+Wire Wire Line
+	4500 1250 5600 1250
+Wire Wire Line
+	5250 1500 5250 1750
+Connection ~ 5600 1500
+Wire Wire Line
+	7350 2650 7350 2700
+Wire Wire Line
+	2100 5300 2100 5400
+Wire Wire Line
+	3050 5300 4350 5300
+Wire Wire Line
+	5600 2750 5600 2800
+Wire Wire Line
+	5150 6450 5150 6500
+Wire Wire Line
+	5250 6450 5350 6450
+Wire Wire Line
+	5350 6450 5600 6450
+Wire Wire Line
+	5250 1750 5250 2800
+Wire Wire Line
+	5150 1750 5250 1750
+Wire Wire Line
+	5600 1500 5600 2750
+Wire Wire Line
+	5250 1500 5600 1500
+Text HLabel 8600 4300 2    60   BiDi ~ 0
+MCU_SDA2
+Text HLabel 8600 4400 2    60   Output ~ 0
+MCU_SCL2
+Text HLabel 8600 4500 2    60   Input ~ 0
+MCU_INT2
+Wire Wire Line
+	6300 3900 6650 3900
+Wire Wire Line
+	6300 4000 6650 4000
+Wire Wire Line
+	6300 4100 6650 4100
+Wire Wire Line
+	6300 4200 6650 4200
+Text HLabel 6650 4000 2    60   Input ~ 0
+MPU_PROG_RX
+Text HLabel 6650 4200 2    60   Input ~ 0
+MCU_PROG_TX
+Wire Wire Line
+	6300 3500 6650 3500
+Wire Wire Line
+	6300 3600 6650 3600
+Text HLabel 6650 3500 2    60   BiDi ~ 0
+MPU_SDA1
+Text HLabel 6650 3600 2    60   Output ~ 0
+MPU_SCL1
+Text HLabel 6650 3400 2    60   Input ~ 0
+MPU_INT1
+Wire Wire Line
+	6300 3400 6650 3400
+Wire Wire Line
+	6300 3200 6650 3200
+Text HLabel 6650 3200 2    60   Input ~ 0
+MCU_AN1
+Text HLabel 4130 5700 0    60   Input ~ 0
+MCU_DEBUG_SWCLK
+Text HLabel 4130 5600 0    60   Input ~ 0
+MCU_DEBUG_SWDIO
+Text Label 6650 3940 0    60   ~ 0
+MCU_PROG_~CTS
+Text Label 6650 4140 0    60   ~ 0
+MCU_PROG_~RTS
+Wire Wire Line
+	6650 4100 6650 4140
+Wire Wire Line
+	6650 3900 6650 3940
+Wire Wire Line
+	4130 5600 4500 5600
+Wire Wire Line
+	4500 5700 4130 5700
+$Comp
+L Asiste:L_0402_4.7nH L?
+U 1 1 5B61ED0F
+P 3650 3450
+F 0 "L?" H 3609 3404 50  0000 R CNN
+F 1 "L_0402_4.7nH" H 3650 2900 50  0001 C CNN
+F 2 "ASISTE:L_0402" H 3650 3100 50  0001 C CNN
+F 3 "https://www.mouser.es/datasheet/2/418/NG_CD_1624112_BA1-656881.pdf" H 3550 3000 50  0001 C CNN
+F 4 "3-1624112-4" H 3650 3200 60  0001 C CNN "man#"
+F 5 "4.7nH" H 3609 3495 50  0000 R CNN "Inductance"
+	1    3650 3450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Asiste:L_0603_10nH L?
+U 1 1 5B61EE52
+P 3650 2950
+F 0 "L?" H 3609 2904 50  0000 R CNN
+F 1 "L_0603_10nH" H 3650 2400 50  0001 C CNN
+F 2 "ASISTE:L_0603" H 3650 2600 50  0001 C CNN
+F 3 "https://www.mouser.es/datasheet/2/40/acculsmd-776478.pdf" H 3550 2500 50  0001 C CNN
+F 4 "L0603100JGWTR" H 3650 2700 60  0001 C CNN "man#"
+F 5 "10nH" H 3609 2995 50  0000 R CNN "Inductance"
+	1    3650 2950
+	-1   0    0    1   
+$EndComp
+Connection ~ 3700 1500
+Wire Wire Line
+	3700 1500 3700 1750
+Connection ~ 3700 1750
+Wire Wire Line
+	3700 1750 3700 2000
+Connection ~ 3700 2000
+Wire Wire Line
+	3700 2000 3700 2250
+Connection ~ 3700 2250
+Wire Wire Line
+	3700 2250 3700 2350
+Wire Wire Line
+	4500 3600 4500 3700
+Wire Wire Line
+	4500 3700 3650 3700
+Wire Wire Line
+	3650 3700 3650 3600
+Wire Wire Line
+	5400 2800 5400 2700
+Wire Wire Line
+	3650 2700 3650 2800
+Wire Wire Line
+	5600 1200 5600 1250
+Connection ~ 5600 1250
+Wire Wire Line
+	5600 1250 5600 1500
+Wire Wire Line
+	4500 1500 5250 1500
+Connection ~ 5250 1500
+Connection ~ 5150 1750
+Wire Wire Line
+	4950 2000 4950 2800
+Wire Wire Line
+	4850 2250 4850 2800
+Wire Wire Line
+	3650 2700 5400 2700
+$Comp
+L Asiste:C_0402_2.2nF C?
+U 1 1 5B64281A
+P 3350 2700
+F 0 "C?" V 3098 2700 50  0000 C CNN
+F 1 "C_0402_2.2nF" H 3200 2150 50  0001 L CNN
+F 2 "ASISTE:C_0402" H 3400 2450 50  0001 C CNN
+F 3 "https://www.mouser.es/datasheet/2/445/885012205027-554116.pdf" H 3900 2350 50  0001 C CNN
+F 4 "885012205027" H 3350 2250 60  0001 C CNN "man#"
+F 5 "2.2nF" V 3189 2700 50  0000 C CNN "Capacitance"
+F 6 "16V" H 3300 2050 50  0001 L CNN "Voltage"
+	1    3350 2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3500 2700 3650 2700
+Connection ~ 3650 2700
+$Comp
+L Asiste:C_0402_2.2pF C?
+U 1 1 5B6446F0
+P 3300 3700
+F 0 "C?" V 3048 3700 50  0000 C CNN
+F 1 "C_0402_2.2pF" H 3100 3150 50  0001 L CNN
+F 2 "ASISTE:C_0402" H 3350 3450 50  0001 C CNN
+F 3 "https://www.mouser.es/datasheet/2/427/vjw1bcbascomseries-223529.pdf" H 3850 3350 50  0001 C CNN
+F 4 "VJ0402A2R2BXQPW1BC" H 3300 3250 60  0001 C CNN "man#"
+F 5 "2.2pF" V 3139 3700 50  0000 C CNN "Capacitance"
+F 6 "10V" H 3250 3050 50  0001 L CNN "Voltage"
+	1    3300 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3450 3700 3650 3700
+Connection ~ 3650 3700
+$Comp
+L Asiste:L_0402_3.3nH L?
+U 1 1 5B64661B
+P 2650 3700
+F 0 "L?" V 2840 3700 50  0000 C CNN
+F 1 "L_0402_3.3nH" H 2650 4050 50  0001 C CNN
+F 2 "ASISTE:L_0402" H 2650 3350 50  0001 C CNN
+F 3 "https://www.mouser.es/datasheet/2/418/NG_DS_1773163_E-1140242.pdf" H 2550 3250 50  0001 C CNN
+F 4 "36541E3N3JTDG" H 2650 3450 60  0001 C CNN "man#"
+F 5 "3.3nH" V 2749 3700 50  0000 C CNN "Inductance"
+	1    2650 3700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3050 4550 4350 4550
+Wire Wire Line
+	2750 4900 2850 4900
+Wire Wire Line
+	3250 4900 3350 4900
+Wire Wire Line
+	3650 3100 3650 3200
+Wire Wire Line
+	4500 3400 4500 3200
+Wire Wire Line
+	4500 3200 3650 3200
+Connection ~ 3650 3200
+Wire Wire Line
+	3650 3200 3650 3300
+$Comp
+L Asiste:C_0402_1pF C?
+U 1 1 5B671A18
+P 2900 3900
+F 0 "C?" H 3000 4000 50  0000 L CNN
+F 1 "C_0402_1pF" H 2700 3350 50  0001 L CNN
+F 2 "ASISTE:C_0402" H 2950 3650 50  0001 C CNN
+F 3 "https://www.mouser.es/datasheet/2/281/murata_03052018_GRM_Series_1-1310166.pdf" H 3450 3550 50  0001 C CNN
+F 4 "GRM0225C1E1R0BA03L" H 2900 3450 60  0001 C CNN "man#"
+F 5 "1pF" H 3000 3800 50  0000 L CNN "Capacitance"
+F 6 "25V" H 2850 3250 50  0001 L CNN "Voltage"
+	1    2900 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 3750 2900 3700
+Connection ~ 2900 3700
+Wire Wire Line
+	2900 3700 2800 3700
+Wire Wire Line
+	4350 4550 4350 4300
+Wire Wire Line
+	4350 4300 4500 4300
+Wire Wire Line
+	4350 4900 4350 5300
+$Comp
+L Asiste:C_0402_1.5pF C?
+U 1 1 5B680ADD
+P 2400 3900
+F 0 "C?" H 2200 4000 50  0000 L CNN
+F 1 "C_0402_1.5pF" H 2200 3350 50  0001 L CNN
+F 2 "ASISTE:C_0402" H 2450 3650 50  0001 C CNN
+F 3 "https://www.mouser.es/datasheet/2/427/vjw1bcbascomseries-223529.pdf" H 2950 3550 50  0001 C CNN
+F 4 "VJ0402A1R5BXQPW1BC" H 2400 3450 60  0001 C CNN "man#"
+F 5 "1.5pF" H 2150 3800 50  0000 L CNN "Capacitance"
+F 6 "10V" H 2450 3250 60  0001 C CNN "Voltage"
+	1    2400 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 3700 2400 3700
+Wire Wire Line
+	2400 3700 2400 3750
+Connection ~ 2400 3700
+$Comp
+L Asiste:GND #PWR?
+U 1 1 5B685711
+P 2650 4150
+F 0 "#PWR?" H 2650 3900 50  0001 C CNN
+F 1 "GND" H 2650 4000 50  0000 C CNN
+F 2 "" H 2650 4150 50  0001 C CNN
+F 3 "" H 2650 4150 50  0001 C CNN
+	1    2650 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 4050 2400 4100
+Wire Wire Line
+	2400 4100 2650 4100
+Wire Wire Line
+	2900 4100 2900 4050
+Wire Wire Line
+	2650 4150 2650 4100
+Connection ~ 2650 4100
+Wire Wire Line
+	2650 4100 2900 4100
+Wire Wire Line
+	2900 3700 3150 3700
+$Comp
+L Asiste:GND #PWR?
+U 1 1 5B695C79
+P 3100 2800
+F 0 "#PWR?" H 3100 2550 50  0001 C CNN
+F 1 "GND" H 3100 2650 50  0000 C CNN
+F 2 "" H 3100 2800 50  0001 C CNN
+F 3 "" H 3100 2800 50  0001 C CNN
+	1    3100 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 2700 3100 2700
+Wire Wire Line
+	3100 2700 3100 2800
+$Comp
+L Asiste:Antenna_Chip AE?
+U 1 1 5B6A1261
+P 1800 3600
+F 0 "AE?" H 1660 3728 50  0000 R CNN
+F 1 "Antenna_Chip" H 1660 3637 50  0000 R CNN
+F 2 "" H 1700 3775 50  0001 C CNN
+F 3 "https://abracon.com/datasheets/ACAG0801-2450-T.pdf" H 2000 3100 50  0001 C CNN
+F 4 "ACAG0801-2450-T" H 1850 3200 60  0001 C CNN "man#"
+	1    1800 3600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 3700 2400 3700
+NoConn ~ 1700 3700
+$Comp
+L Asiste:R_0402_10k R?
+U 1 1 5B759306
+P 8300 4050
+F 0 "R?" H 8370 4096 50  0000 L CNN
+F 1 "R_0402_10k" H 8300 3500 50  0001 C CNN
+F 2 "ASISTE:R_0402" H 8300 3600 50  0001 C CNN
+F 3 "https://www.mouser.es/datasheet/2/315/AOA0000C334-1314047.pdf" H 8300 3700 50  0001 C CNN
+F 4 "ERJ-U02D1002X" H 8250 3800 60  0001 C CNN "man#"
+F 5 "10k" H 8370 4005 50  0000 L CNN "Resistance"
+	1    8300 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 4500 7700 4500
+Wire Wire Line
+	6300 4400 8000 4400
+Wire Wire Line
+	6300 4300 8300 4300
+$Comp
+L Asiste:R_0402_10k R?
+U 1 1 5B767ABA
+P 8000 4050
+F 0 "R?" H 8070 4096 50  0000 L CNN
+F 1 "R_0402_10k" H 8000 3500 50  0001 C CNN
+F 2 "ASISTE:R_0402" H 8000 3600 50  0001 C CNN
+F 3 "https://www.mouser.es/datasheet/2/315/AOA0000C334-1314047.pdf" H 8000 3700 50  0001 C CNN
+F 4 "ERJ-U02D1002X" H 7950 3800 60  0001 C CNN "man#"
+F 5 "10k" H 8070 4005 50  0000 L CNN "Resistance"
+	1    8000 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Asiste:R_0402_10k R?
+U 1 1 5B76A749
+P 7700 4050
+F 0 "R?" H 7770 4096 50  0000 L CNN
+F 1 "R_0402_10k" H 7700 3500 50  0001 C CNN
+F 2 "ASISTE:R_0402" H 7700 3600 50  0001 C CNN
+F 3 "https://www.mouser.es/datasheet/2/315/AOA0000C334-1314047.pdf" H 7700 3700 50  0001 C CNN
+F 4 "ERJ-U02D1002X" H 7650 3800 60  0001 C CNN "man#"
+F 5 "10k" H 7770 4005 50  0000 L CNN "Resistance"
+	1    7700 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 4200 7700 4500
+Connection ~ 7700 4500
+Wire Wire Line
+	7700 4500 8600 4500
+Wire Wire Line
+	8000 4200 8000 4400
+Connection ~ 8000 4400
+Wire Wire Line
+	8000 4400 8600 4400
+Wire Wire Line
+	8300 4200 8300 4300
+Connection ~ 8300 4300
+Wire Wire Line
+	8300 4300 8600 4300
+Wire Wire Line
+	7700 3900 7700 3750
+Wire Wire Line
+	7700 3750 8000 3750
+Wire Wire Line
+	8300 3750 8300 3900
+Wire Wire Line
+	8000 3900 8000 3750
+Connection ~ 8000 3750
+Wire Wire Line
+	8000 3750 8300 3750
+$Comp
+L Asiste:+3V3 #PWR?
+U 1 1 5B77C2DB
+P 8000 3650
+F 0 "#PWR?" H 8000 3500 50  0001 C CNN
+F 1 "+3V3" H 8015 3823 50  0000 C CNN
+F 2 "" H 8000 3650 50  0001 C CNN
+F 3 "" H 8000 3650 50  0001 C CNN
+	1    8000 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 3650 8000 3750
+NoConn ~ 6300 3100
+NoConn ~ 6300 3700
+NoConn ~ 6300 3800
+NoConn ~ 6300 4700
+NoConn ~ 6300 4800
+NoConn ~ 6300 4900
+NoConn ~ 6300 5000
+NoConn ~ 6300 5100
+NoConn ~ 6300 5200
+NoConn ~ 6300 5600
+$Comp
+L Asiste:nRF51x22-QFxx U?
+U 1 1 5B56DEA2
+P 5400 4600
+F 0 "U?" H 5400 4700 50  0000 C CNN
+F 1 "nRF51x22-QFxx" H 5400 4600 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-48-1EP_6x6mm_P0.4mm_EP4.66x4.66mm" H 5400 4600 50  0001 C CNN
+F 3 "" H 5000 4500 50  0001 C CNN
+	1    5400 4600
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6300 5700
+NoConn ~ 6300 5800
+NoConn ~ 6300 5900
+NoConn ~ 6300 6000
+NoConn ~ 6300 6100
+NoConn ~ 6300 6200
+Text HLabel 6650 3300 2    60   Input ~ 0
+MCU_INT3
+Wire Wire Line
+	6300 3300 6650 3300
+Text HLabel 6600 5300 2    60   Output ~ 0
+LED_GREEN
+Text HLabel 6600 5400 2    60   Output ~ 0
+LED_RED
+Text HLabel 6600 5500 2    60   Output ~ 0
+LED_BLUE
+Wire Wire Line
+	6300 5300 6600 5300
+Wire Wire Line
+	6300 5400 6600 5400
+Wire Wire Line
+	6300 5500 6600 5500
+$EndSCHEMATC

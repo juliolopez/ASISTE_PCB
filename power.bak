@@ -1,0 +1,330 @@
+EESchema Schematic File Version 4
+LIBS:ASISTE-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 6
+Title "Battery Charger & DC/DC Converters"
+Date "2018-08-15"
+Rev "v1.0"
+Comp "ASISTE"
+Comment1 "Julio López Moya"
+Comment2 "ASISTE"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Asiste:GND #PWR?
+U 1 1 5B69D268
+P 3100 3450
+F 0 "#PWR?" H 3100 3200 50  0001 C CNN
+F 1 "GND" H 3105 3277 50  0000 C CNN
+F 2 "" H 3100 3450 50  0001 C CNN
+F 3 "" H 3100 3450 50  0001 C CNN
+	1    3100 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Asiste:USB_B_Micro J?
+U 1 1 5B752AC5
+P 3100 2950
+F 0 "J?" H 3155 3417 50  0000 C CNN
+F 1 "USB_B_Micro" H 3155 3326 50  0000 C CNN
+F 2 "ASISTE:USB_Micro-B_Molex-105017-0001" H 3050 2200 50  0001 C CNN
+F 3 "https://www.mouser.es/datasheet/2/276/1050170001_IO_CONNECTORS-230168.pdf" H 3150 2100 50  0001 C CNN
+F 4 "105017-0001" H 3100 2000 60  0001 C CNN "man#"
+	1    3100 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 3350 3100 3400
+Wire Wire Line
+	3400 2750 3500 2750
+Wire Wire Line
+	3500 2750 3500 2650
+NoConn ~ 3400 2950
+NoConn ~ 3400 3050
+NoConn ~ 3400 3150
+Wire Wire Line
+	3000 3350 3000 3400
+Wire Wire Line
+	3000 3400 3100 3400
+Connection ~ 3100 3400
+Wire Wire Line
+	3100 3400 3100 3450
+$Comp
+L Asiste:MCP73831 U?
+U 1 1 5B744957
+P 6250 3050
+F 0 "U?" H 6000 3300 50  0000 C CNN
+F 1 "MCP73831" H 6550 3300 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 5750 2300 50  0001 L CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" H 6250 2400 50  0001 C CNN
+F 4 "MCP73831T-2ACI/OT" H 6250 3700 60  0001 C CNN "man#"
+	1    6250 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Asiste:GND #PWR?
+U 1 1 5B744A7C
+P 6250 3600
+F 0 "#PWR?" H 6250 3350 50  0001 C CNN
+F 1 "GND" H 6255 3427 50  0000 C CNN
+F 2 "" H 6250 3600 50  0001 C CNN
+F 3 "" H 6250 3600 50  0001 C CNN
+	1    6250 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 3350 6250 3550
+Wire Wire Line
+	6250 2600 6250 2650
+$Comp
+L Asiste:VBAT #PWR?
+U 1 1 5B7453C9
+P 7650 2650
+F 0 "#PWR?" H 7650 2500 50  0001 C CNN
+F 1 "VBAT" H 7665 2823 50  0000 C CNN
+F 2 "" H 7650 2650 50  0001 C CNN
+F 3 "" H 7650 2650 50  0001 C CNN
+	1    7650 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 2950 6900 2950
+Wire Wire Line
+	5850 3150 5650 3150
+Wire Wire Line
+	5650 3150 5650 3200
+Wire Wire Line
+	5650 3500 5650 3550
+Wire Wire Line
+	5650 3550 6250 3550
+Connection ~ 6250 3550
+Wire Wire Line
+	6250 3550 6250 3600
+$Comp
+L Asiste:C_0603_4.7uF C?
+U 1 1 5B745D35
+P 5000 3100
+F 0 "C?" H 4886 3054 50  0000 R CNN
+F 1 "C_0603_4.7uF" H 4800 2550 50  0001 L CNN
+F 2 "ASISTE:C_0603" H 5050 2850 50  0001 C CNN
+F 3 "https://www.mouser.es/datasheet/2/400/lcc_commercial_soft_en-520032.pdf" H 5550 2750 50  0001 C CNN
+F 4 "C1608X5R1A475K080AE" H 5000 2650 60  0001 C CNN "man#"
+F 5 "4.7uF" H 4886 3145 50  0000 R CNN "Capacitance"
+F 6 "10V" H 5000 2450 60  0001 C CNN "Voltage"
+	1    5000 3100
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5000 2950 5000 2650
+Wire Wire Line
+	5000 2650 6250 2650
+Connection ~ 6250 2650
+Wire Wire Line
+	6250 2650 6250 2750
+Wire Wire Line
+	5000 3250 5000 3550
+Wire Wire Line
+	5000 3550 5650 3550
+Connection ~ 5650 3550
+$Comp
+L Asiste:C_0603_4.7uF C?
+U 1 1 5B74635C
+P 7650 3100
+F 0 "C?" H 7765 3146 50  0000 L CNN
+F 1 "C_0603_4.7uF" H 7450 2550 50  0001 L CNN
+F 2 "ASISTE:C_0603" H 7700 2850 50  0001 C CNN
+F 3 "https://www.mouser.es/datasheet/2/400/lcc_commercial_soft_en-520032.pdf" H 8200 2750 50  0001 C CNN
+F 4 "C1608X5R1A475K080AE" H 7650 2650 60  0001 C CNN "man#"
+F 5 "4.7uF" H 7765 3055 50  0000 L CNN "Capacitance"
+F 6 "10V" H 7650 2450 60  0001 C CNN "Voltage"
+	1    7650 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 2650 7650 2650
+Wire Wire Line
+	6900 2650 6900 2950
+Wire Wire Line
+	7650 2650 7650 2950
+Connection ~ 7650 2650
+Wire Wire Line
+	6250 3550 7650 3550
+Wire Wire Line
+	7650 3550 7650 3250
+Text HLabel 6750 3150 2    60   Output ~ 0
+BAT_CHG_STAT
+Wire Wire Line
+	6650 3150 6750 3150
+$Comp
+L Asiste:PWR_FLAG #FLG?
+U 1 1 5B748A67
+P 3850 2700
+F 0 "#FLG?" H 3850 2775 50  0001 C CNN
+F 1 "PWR_FLAG" H 3850 2874 50  0000 C CNN
+F 2 "" H 3850 2700 50  0001 C CNN
+F 3 "~" H 3850 2700 50  0001 C CNN
+	1    3850 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 2750 3850 2750
+Wire Wire Line
+	3850 2750 3850 2700
+Connection ~ 3500 2750
+$Comp
+L Asiste:PWR_FLAG #FLG?
+U 1 1 5B749035
+P 3450 3450
+F 0 "#FLG?" H 3450 3525 50  0001 C CNN
+F 1 "PWR_FLAG" H 3450 3623 50  0000 C CNN
+F 2 "" H 3450 3450 50  0001 C CNN
+F 3 "~" H 3450 3450 50  0001 C CNN
+	1    3450 3450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3100 3400 3450 3400
+Wire Wire Line
+	3450 3400 3450 3450
+$Comp
+L Asiste:PWR_FLAG #FLG?
+U 1 1 5B749B97
+P 5000 2600
+F 0 "#FLG?" H 5000 2675 50  0001 C CNN
+F 1 "PWR_FLAG" H 5000 2774 50  0000 C CNN
+F 2 "" H 5000 2600 50  0001 C CNN
+F 3 "~" H 5000 2600 50  0001 C CNN
+	1    5000 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 2600 5000 2650
+Connection ~ 5000 2650
+$Comp
+L Asiste:PWR_FLAG #FLG?
+U 1 1 5B74A256
+P 6900 2600
+F 0 "#FLG?" H 6900 2675 50  0001 C CNN
+F 1 "PWR_FLAG" H 6900 2774 50  0000 C CNN
+F 2 "" H 6900 2600 50  0001 C CNN
+F 3 "~" H 6900 2600 50  0001 C CNN
+	1    6900 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 2650 6900 2600
+Connection ~ 6900 2650
+$Comp
+L Asiste:R_0402_2k R?
+U 1 1 5B74B4B5
+P 5650 3350
+F 0 "R?" H 5720 3396 50  0000 L CNN
+F 1 "R_0402_2k" H 5650 2800 50  0001 C CNN
+F 2 "ASISTE:R_0402" H 5650 2900 50  0001 C CNN
+F 3 "https://www.mouser.es/datasheet/2/427/crcwce3-1223726.pdf" H 5650 3000 50  0001 C CNN
+F 4 "CRCW04022K00JNEDC" H 5600 3100 60  0001 C CNN "man#"
+F 5 "2k" H 5720 3305 50  0000 L CNN "Resistance"
+	1    5650 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Asiste:R_0402_2M2 R?
+U 1 1 5B74D1E7
+P 8250 3300
+F 0 "R?" H 8320 3346 50  0000 L CNN
+F 1 "R_0402_2M2" H 8250 2750 50  0001 C CNN
+F 2 "ASISTE:R_0402" H 8250 2850 50  0001 C CNN
+F 3 "https://www.mouser.es/datasheet/2/427/dcrcwe3-109170.pdf" H 8250 2950 50  0001 C CNN
+F 4 "CRCW04022M20JNED" H 8200 3050 60  0001 C CNN "man#"
+F 5 "2M2" H 8320 3255 50  0000 L CNN "Resistance"
+	1    8250 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Asiste:R_0402_10M R?
+U 1 1 5B74D9F6
+P 8250 2900
+F 0 "R?" H 8320 2946 50  0000 L CNN
+F 1 "R_0402_10M" H 8250 2350 50  0001 C CNN
+F 2 "ASISTE:R_0402" H 8250 2450 50  0001 C CNN
+F 3 "https://www.mouser.es/datasheet/2/348/sfr-e-1099439.pdf" H 8250 2550 50  0001 C CNN
+F 4 "SFR01MZPJ106" H 8200 2650 60  0001 C CNN "man#"
+F 5 "10M" H 8320 2855 50  0000 L CNN "Resistance"
+	1    8250 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 2650 8250 2650
+Wire Wire Line
+	8250 2650 8250 2750
+Wire Wire Line
+	8250 3450 8250 3550
+Wire Wire Line
+	8250 3550 7650 3550
+Connection ~ 7650 3550
+Wire Wire Line
+	8250 3050 8250 3100
+Wire Wire Line
+	8250 3100 8550 3100
+Connection ~ 8250 3100
+Wire Wire Line
+	8250 3100 8250 3150
+Text HLabel 8550 3100 2    60   Output ~ 0
+BAT_SENSE
+$Comp
+L Asiste:VBUS #PWR?
+U 1 1 5B795544
+P 3500 2650
+F 0 "#PWR?" H 3500 2500 50  0001 C CNN
+F 1 "VBUS" H 3515 2823 50  0000 C CNN
+F 2 "" H 3500 2650 50  0001 C CNN
+F 3 "" H 3500 2650 50  0001 C CNN
+	1    3500 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Asiste:VBUS #PWR?
+U 1 1 5B7955CD
+P 6250 2600
+F 0 "#PWR?" H 6250 2450 50  0001 C CNN
+F 1 "VBUS" H 6265 2773 50  0000 C CNN
+F 2 "" H 6250 2600 50  0001 C CNN
+F 3 "" H 6250 2600 50  0001 C CNN
+	1    6250 2600
+	1    0    0    -1  
+$EndComp
+Text Notes 1200 7300 0    60   ~ 0
+IREG= 1000V/RPROG\nRPROG = kOhms\nIREG = miliampere
+Wire Notes Line
+	1100 6900 1100 7400
+Wire Notes Line
+	1100 7400 2300 7400
+Wire Notes Line
+	2300 7400 2300 6900
+Wire Notes Line
+	2300 6900 1100 6900
+$Comp
+L Asiste:Conn_01x02 J?
+U 1 1 5B79A067
+P 9800 2650
+F 0 "J?" H 9880 2642 50  0000 L CNN
+F 1 "Conn_01x02" H 9880 2551 50  0000 L CNN
+F 2 "ASISTE:JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal" H 9850 2150 50  0001 C CNN
+F 3 "https://katalog.we-online.com/em/datasheet/6651xx131822.pdf" H 9850 2250 50  0001 C CNN
+F 4 "665102131822" H 9800 2350 60  0001 C CNN "man#"
+	1    9800 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 2650 9600 2650
+Connection ~ 8250 2650
+Wire Wire Line
+	9600 2750 9600 3550
+Wire Wire Line
+	9600 3550 8250 3550
+Connection ~ 8250 3550
+$EndSCHEMATC

@@ -1,0 +1,175 @@
+EESchema Schematic File Version 4
+LIBS:ASISTE-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 6
+Title "Temperature"
+Date "2018-08-15"
+Rev "v1.0"
+Comp "ASISTE"
+Comment1 "Julio López Moya"
+Comment2 "ASISTE"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Asiste:TMP112AIDRLR U?
+U 1 1 5B7E0916
+P 5900 3850
+F 0 "U?" H 5600 4200 60  0000 L CNN
+F 1 "TMP112AIDRLR" H 4900 3700 60  0000 L CNN
+F 2 "ASISTE:SOT-563" H 6100 4050 60  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tmp112.pdf" H 6100 4150 60  0001 L CNN
+F 4 "TMP112AIDRLR" H 6100 4250 60  0001 L CNN "man#"
+	1    5900 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Asiste:R_0402_10k R?
+U 1 1 5B7E0A13
+P 5150 3400
+F 0 "R?" H 5220 3446 50  0000 L CNN
+F 1 "R_0402_10k" H 5150 2850 50  0001 C CNN
+F 2 "ASISTE:R_0402" H 5150 2950 50  0001 C CNN
+F 3 "https://www.mouser.es/datasheet/2/315/AOA0000C334-1314047.pdf" H 5150 3050 50  0001 C CNN
+F 4 "ERJ-U02D1002X" H 5100 3150 60  0001 C CNN "man#"
+F 5 "10k" H 5220 3355 50  0000 L CNN "Resistance"
+	1    5150 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Asiste:R_0402_10k R?
+U 1 1 5B7E0A91
+P 4850 3400
+F 0 "R?" H 4780 3354 50  0000 R CNN
+F 1 "R_0402_10k" H 4850 2850 50  0001 C CNN
+F 2 "ASISTE:R_0402" H 4850 2950 50  0001 C CNN
+F 3 "https://www.mouser.es/datasheet/2/315/AOA0000C334-1314047.pdf" H 4850 3050 50  0001 C CNN
+F 4 "ERJ-U02D1002X" H 4800 3150 60  0001 C CNN "man#"
+F 5 "10k" H 4780 3445 50  0000 R CNN "Resistance"
+	1    4850 3400
+	1    0    0    1   
+$EndComp
+$Comp
+L Asiste:+3V3 #PWR?
+U 1 1 5B7E0B01
+P 5000 3150
+F 0 "#PWR?" H 5000 3000 50  0001 C CNN
+F 1 "+3V3" H 5015 3323 50  0000 C CNN
+F 2 "" H 5000 3150 50  0001 C CNN
+F 3 "" H 5000 3150 50  0001 C CNN
+	1    5000 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 3250 4850 3200
+Wire Wire Line
+	4850 3200 5000 3200
+Wire Wire Line
+	5150 3200 5150 3250
+Wire Wire Line
+	5000 3150 5000 3200
+Connection ~ 5000 3200
+Wire Wire Line
+	5000 3200 5150 3200
+Wire Wire Line
+	5150 3550 5150 3650
+Wire Wire Line
+	5150 3650 5500 3650
+Wire Wire Line
+	4850 3550 4850 3750
+Wire Wire Line
+	4850 3750 5500 3750
+Wire Wire Line
+	5150 3650 4450 3650
+Connection ~ 5150 3650
+Wire Wire Line
+	4850 3750 4450 3750
+Connection ~ 4850 3750
+Text HLabel 4450 3650 0    60   Input ~ 0
+TMP_SCL
+Text HLabel 4450 3750 0    60   BiDi ~ 0
+TMP_SDA
+$Comp
+L Asiste:R_0402_10k R?
+U 1 1 5B7E0E26
+P 6600 3600
+F 0 "R?" H 6670 3646 50  0000 L CNN
+F 1 "R_0402_10k" H 6600 3050 50  0001 C CNN
+F 2 "ASISTE:R_0402" H 6600 3150 50  0001 C CNN
+F 3 "https://www.mouser.es/datasheet/2/315/AOA0000C334-1314047.pdf" H 6600 3250 50  0001 C CNN
+F 4 "ERJ-U02D1002X" H 6550 3350 60  0001 C CNN "man#"
+F 5 "10k" H 6670 3555 50  0000 L CNN "Resistance"
+	1    6600 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 3850 6600 3750
+Text HLabel 6850 3850 2    60   Output ~ 0
+TMP_ALERT
+$Comp
+L Asiste:GND #PWR?
+U 1 1 5B7E103E
+P 5800 4400
+F 0 "#PWR?" H 5800 4150 50  0001 C CNN
+F 1 "GND" H 5805 4227 50  0000 C CNN
+F 2 "" H 5800 4400 50  0001 C CNN
+F 3 "" H 5800 4400 50  0001 C CNN
+	1    5800 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 4150 5800 4350
+Wire Wire Line
+	6000 3450 6000 3250
+Wire Wire Line
+	6600 3250 6600 3450
+$Comp
+L Asiste:+3V3 #PWR?
+U 1 1 5B7E1276
+P 6300 3200
+F 0 "#PWR?" H 6300 3050 50  0001 C CNN
+F 1 "+3V3" H 6315 3373 50  0000 C CNN
+F 2 "" H 6300 3200 50  0001 C CNN
+F 3 "" H 6300 3200 50  0001 C CNN
+	1    6300 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 3200 6300 3250
+$Comp
+L Asiste:C_0402_100nF C?
+U 1 1 5B7E174A
+P 6300 4100
+F 0 "C?" H 6415 4146 50  0000 L CNN
+F 1 "C_0402_100nF" H 6050 3550 50  0001 L CNN
+F 2 "ASISTE:C_0402" H 6350 3850 50  0001 C CNN
+F 3 "https://www.mouser.es/datasheet/2/281/murata_03122018_GCM_Series-1310150.pdf" H 6850 3750 50  0001 C CNN
+F 4 "GCM155R71C104KA55D" H 6300 3650 60  0001 C CNN "man#"
+F 5 "100nF" H 6415 4055 50  0000 L CNN "Capacitance"
+F 6 "16V" H 6250 3450 50  0001 L CNN "Voltage"
+	1    6300 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 4250 6300 4350
+Wire Wire Line
+	6300 4350 5800 4350
+Connection ~ 5800 4350
+Wire Wire Line
+	5800 4350 5800 4400
+Wire Wire Line
+	6300 3950 6300 3250
+Wire Wire Line
+	6000 3250 6300 3250
+Connection ~ 6300 3250
+Wire Wire Line
+	6300 3250 6600 3250
+Connection ~ 6600 3850
+Wire Wire Line
+	6600 3850 6850 3850
+Wire Wire Line
+	6200 3850 6600 3850
+$EndSCHEMATC

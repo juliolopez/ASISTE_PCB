@@ -1,0 +1,297 @@
+EESchema Schematic File Version 4
+LIBS:ASISTE-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 6
+Title "Heart Rate & Oximeter"
+Date "2018-08-15"
+Rev "v1.0"
+Comp "ASISTE"
+Comment1 "Julio López Moya"
+Comment2 "ASISTE"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Asiste:C_0603_4.7uF C?
+U 1 1 5B5650BB
+P 5750 2650
+F 0 "C?" H 5636 2604 50  0000 R CNN
+F 1 "C_0603_4.7uF" H 5550 2100 50  0001 L CNN
+F 2 "ASISTE:C_0603" H 5800 2400 50  0001 C CNN
+F 3 "https://www.mouser.es/datasheet/2/400/lcc_commercial_soft_en-520032.pdf" H 6300 2300 50  0001 C CNN
+F 4 "C1608X5R1A475K080AE" H 5750 2200 60  0001 C CNN "man#"
+F 5 "4.7uF" H 5636 2695 50  0000 R CNN "Capacitance"
+F 6 "10V" H 5750 2000 60  0001 C CNN "Voltage"
+	1    5750 2650
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5750 2800 5750 3000
+$Comp
+L Asiste:C_0603_10uF C?
+U 1 1 5B565E1E
+P 6050 2650
+F 0 "C?" H 6165 2696 50  0000 L CNN
+F 1 "C_0603_10uF" H 5850 2100 50  0001 L CNN
+F 2 "ASISTE:C_0603" H 6100 2400 50  0001 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/281/murata_03052018_GRM_Series_1-1310166.pdf" H 6600 2300 50  0001 C CNN
+F 4 "GRM188R60J106KE47D" H 6050 2000 60  0001 C CNN "man#"
+F 5 "10uF" H 6165 2605 50  0000 L CNN "Capacitance"
+F 6 "6V3" H 6050 2200 60  0001 C CNN "Voltage"
+	1    6050 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 2800 6050 2900
+Wire Wire Line
+	5950 3000 5950 2900
+Wire Wire Line
+	5950 2900 6050 2900
+Connection ~ 6050 2900
+Wire Wire Line
+	6050 2900 6050 3000
+$Comp
+L Asiste:GND #PWR?
+U 1 1 5B565EEE
+P 5300 2500
+F 0 "#PWR?" H 5300 2250 50  0001 C CNN
+F 1 "GND" H 5305 2327 50  0000 C CNN
+F 2 "" H 5300 2500 50  0001 C CNN
+F 3 "" H 5300 2500 50  0001 C CNN
+	1    5300 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 2500 5300 2350
+Wire Wire Line
+	5300 2350 5750 2350
+Wire Wire Line
+	6050 2350 6050 2500
+Wire Wire Line
+	5750 2500 5750 2350
+Connection ~ 5750 2350
+Wire Wire Line
+	5750 2350 6050 2350
+$Comp
+L Asiste:R_0402_10k R?
+U 1 1 5B566757
+P 4950 3000
+F 0 "R?" H 5020 3046 50  0000 L CNN
+F 1 "R_0402_10k" H 4950 2450 50  0001 C CNN
+F 2 "ASISTE:R_0402" H 4950 2550 50  0001 C CNN
+F 3 "https://www.mouser.es/datasheet/2/315/AOA0000C334-1314047.pdf" H 4950 2650 50  0001 C CNN
+F 4 "ERJ-U02D1002X" H 4900 2750 60  0001 C CNN "man#"
+F 5 "10k" H 5020 2955 50  0000 L CNN "Resistance"
+	1    4950 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 3250 4950 3150
+$Comp
+L Asiste:R_0402_10k R?
+U 1 1 5B56687F
+P 4950 4050
+F 0 "R?" H 5020 4096 50  0000 L CNN
+F 1 "R_0402_10k" H 4950 3500 50  0001 C CNN
+F 2 "ASISTE:R_0402" H 4950 3600 50  0001 C CNN
+F 3 "https://www.mouser.es/datasheet/2/315/AOA0000C334-1314047.pdf" H 4950 3700 50  0001 C CNN
+F 4 "ERJ-U02D1002X" H 4900 3800 60  0001 C CNN "man#"
+F 5 "10k" H 5020 4005 50  0000 L CNN "Resistance"
+	1    4950 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Asiste:R_0402_10k R?
+U 1 1 5B566B71
+P 6850 3200
+F 0 "R?" H 6920 3246 50  0000 L CNN
+F 1 "R_0402_10k" H 6850 2650 50  0001 C CNN
+F 2 "ASISTE:R_0402" H 6850 2750 50  0001 C CNN
+F 3 "https://www.mouser.es/datasheet/2/315/AOA0000C334-1314047.pdf" H 6850 2850 50  0001 C CNN
+F 4 "ERJ-U02D1002X" H 6800 2950 60  0001 C CNN "man#"
+F 5 "10k" H 6920 3155 50  0000 L CNN "Resistance"
+	1    6850 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 3400 6850 3400
+Wire Wire Line
+	6850 3400 6850 3350
+Wire Wire Line
+	4000 2650 4000 2600
+Wire Wire Line
+	6850 2950 6850 3000
+$Comp
+L Asiste:GND #PWR?
+U 1 1 5B5673C7
+P 5950 4100
+F 0 "#PWR?" H 5950 3850 50  0001 C CNN
+F 1 "GND" H 5955 3927 50  0000 C CNN
+F 2 "" H 5950 4100 50  0001 C CNN
+F 3 "" H 5950 4100 50  0001 C CNN
+	1    5950 4100
+	1    0    0    -1  
+$EndComp
+Connection ~ 6850 3400
+Text HLabel 8450 3400 2    60   Output ~ 0
+HR_~INT
+Text HLabel 3450 3250 0    60   Input ~ 0
+HR_SCL
+Text HLabel 3450 3700 0    60   BiDi ~ 0
+HR_SDA
+$Comp
+L Asiste:BSS138 Q?
+U 1 1 5B747A70
+P 4000 3150
+F 0 "Q?" V 3900 2950 50  0000 C CNN
+F 1 "BSS138" V 4000 2850 50  0000 C CNN
+F 2 "ASISTE:SOT-23" H 4200 3075 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 4200 3225 50  0001 L CNN
+F 4 "BSS138" H 4200 3000 60  0001 L CNN "man#"
+	1    4000 3150
+	0    -1   1    0   
+$EndComp
+$Comp
+L Asiste:BSS138 Q?
+U 1 1 5B749C53
+P 4000 3800
+F 0 "Q?" V 3950 3600 50  0000 C CNN
+F 1 "BSS138" V 3850 3500 50  0000 C CNN
+F 2 "ASISTE:SOT-23" H 4200 3725 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 4200 3875 50  0001 L CNN
+F 4 "BSS138" H 4200 3650 60  0001 L CNN "man#"
+	1    4000 3800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4200 3250 4950 3250
+Wire Wire Line
+	4200 3700 4950 3700
+Wire Wire Line
+	4000 2950 4000 2650
+Wire Wire Line
+	3450 3250 3800 3250
+$Comp
+L Asiste:BSS138 Q?
+U 1 1 5B750668
+P 7650 3300
+F 0 "Q?" V 7900 3300 50  0000 C CNN
+F 1 "BSS138" V 7991 3300 50  0000 C CNN
+F 2 "ASISTE:SOT-23" H 7850 3225 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 7850 3375 50  0001 L CNN
+F 4 "BSS138" H 7850 3150 60  0001 L CNN "man#"
+	1    7650 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6850 3400 7450 3400
+Wire Wire Line
+	7850 3400 8450 3400
+Wire Wire Line
+	7650 3100 7650 3000
+Wire Wire Line
+	7650 3000 6850 3000
+Connection ~ 6850 3000
+Wire Wire Line
+	6850 3000 6850 3050
+$Comp
+L Asiste:+1V8 #PWR?
+U 1 1 5B753557
+P 4000 2600
+F 0 "#PWR?" H 4000 2450 50  0001 C CNN
+F 1 "+1V8" H 4015 2773 50  0000 C CNN
+F 2 "" H 4000 2600 50  0001 C CNN
+F 3 "" H 4000 2600 50  0001 C CNN
+	1    4000 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Asiste:+1V8 #PWR?
+U 1 1 5B753634
+P 6850 2950
+F 0 "#PWR?" H 6850 2800 50  0001 C CNN
+F 1 "+1V8" H 6865 3123 50  0000 C CNN
+F 2 "" H 6850 2950 50  0001 C CNN
+F 3 "" H 6850 2950 50  0001 C CNN
+	1    6850 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 3700 3800 3700
+Wire Wire Line
+	5450 3500 4950 3500
+Wire Wire Line
+	4950 2650 4950 2850
+Connection ~ 4000 2650
+Wire Wire Line
+	4000 4000 4000 4300
+$Comp
+L Asiste:+1V8 #PWR?
+U 1 1 5B78ABA9
+P 4000 4450
+F 0 "#PWR?" H 4000 4300 50  0001 C CNN
+F 1 "+1V8" H 4015 4623 50  0000 C CNN
+F 2 "" H 4000 4450 50  0001 C CNN
+F 3 "" H 4000 4450 50  0001 C CNN
+	1    4000 4450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4000 2650 4950 2650
+Wire Wire Line
+	4950 4200 4950 4300
+Wire Wire Line
+	4950 4300 4000 4300
+Connection ~ 4000 4300
+Wire Wire Line
+	4000 4300 4000 4450
+Wire Wire Line
+	4950 3500 4950 3700
+Wire Wire Line
+	4950 3700 4950 3900
+Connection ~ 4950 3700
+Wire Wire Line
+	5450 3400 4950 3400
+Wire Wire Line
+	4950 3400 4950 3250
+Connection ~ 4950 3250
+$Comp
+L Asiste:+5V #PWR?
+U 1 1 5B7961FD
+P 6450 2350
+F 0 "#PWR?" H 6450 2200 50  0001 C CNN
+F 1 "+5V" H 6465 2523 50  0000 C CNN
+F 2 "" H 6450 2350 50  0001 C CNN
+F 3 "" H 6450 2350 50  0001 C CNN
+	1    6450 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 2900 6450 2900
+Wire Wire Line
+	6450 2900 6450 2350
+$Comp
+L Asiste:MAX30105 IC?
+U 1 1 5B77F5B0
+P 6050 3500
+F 0 "IC?" H 5600 3950 50  0000 R CNN
+F 1 "MAX30105" H 5850 3050 50  0000 R CNN
+F 2 "OptoDevice:Maxim_OLGA-14_3.3x5.6mm_P0.8mm" H 6050 2650 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX30105.pdf" H 6150 2550 50  0001 C CNN
+F 4 "MAX30105EFD+" H 6050 2450 60  0001 C CNN "man#"
+	1    6050 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 4000 5950 4050
+Wire Wire Line
+	6150 4000 6150 4050
+Wire Wire Line
+	6150 4050 5950 4050
+Connection ~ 5950 4050
+Wire Wire Line
+	5950 4050 5950 4100
+$EndSCHEMATC
