@@ -318,6 +318,29 @@ X Pin_2 2 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Asiste:Crystal_3.2x1.5
+#
+DEF Asiste:Crystal_3.2x1.5 Y 0 40 N N 1 F N
+F0 "Y" 0 150 50 H V C CNN
+F1 "Asiste:Crystal_3.2x1.5" 0 -150 50 H V C CNN
+F2 "ASISTE:Crystal_SMD_G8-2Pin_3.2x1.5mm" 0 -550 50 H I C CNN
+F3 "https://www.mouser.es/datasheet/2/741/LFXTAL009706Bulk-940434.pdf" -50 -250 50 H I C CNN
+F4 "LFXTAL009706Bulk" 50 -350 60 H I C CNN "man#"
+F5 "32.7680 KHz" 0 -450 60 H I C CNN "Frecuency"
+$FPLIST
+ Crystal*
+$ENDFPLIST
+DRAW
+S -45 100 45 -100 0 1 12 N
+P 2 0 1 0 -100 0 -75 0 N
+P 2 0 1 20 -75 -50 -75 50 N
+P 2 0 1 20 75 -50 75 50 N
+P 2 0 1 0 100 0 75 0 N
+X 1 1 -150 0 50 R 50 50 1 1 P
+X 2 2 150 0 50 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Asiste:Crystal_GND24_2520
 #
 DEF ~Asiste:Crystal_GND24_2520 Y 0 40 Y N 1 F N
@@ -564,7 +587,7 @@ ENDDEF
 DEF Asiste:MAX30105 IC 0 40 Y Y 1 F N
 F0 "IC" -450 450 50 H V C CNN
 F1 "Asiste:MAX30105" -400 -450 50 H V C CNN
-F2 "OptoDevice:Maxim_OLGA-14_3.3x5.6mm_P0.8mm" 0 -850 50 H I C CNN
+F2 "ASISTE:Maxim_OLGA-14_3.3x5.6mm_P0.8mm" 0 -850 50 H I C CNN
 F3 "https://datasheets.maximintegrated.com/en/ds/MAX30105.pdf" 100 -950 50 H I C CNN
 F4 "MAX30105EFD+" 0 -1050 60 H I C CNN "man#"
 $FPLIST
@@ -594,7 +617,7 @@ ENDDEF
 DEF Asiste:MCP73831 U 0 40 Y Y 1 F N
 F0 "U" -300 250 50 H V L CNN
 F1 "Asiste:MCP73831" 50 250 50 H V L CNN
-F2 "Package_TO_SOT_SMD:SOT-23-5" -500 -750 50 H I L CIN
+F2 "ASISTE:TSOT-23-5" -500 -750 50 H I L CIN
 F3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" 0 -650 50 H I C CNN
 F4 "MCP73831T-2ACI/OT" 0 650 60 H I C CNN "man#"
 ALIAS MCP73832-5-OT MCP73832-4-OT MCP73832-3-OT MCP73831-2-OT MCP73831-5-OT MCP73831-4-OT MCP73831-3-OT
@@ -960,8 +983,9 @@ ENDDEF
 DEF Asiste:nRF51x22-QFxx U 0 20 Y Y 1 F N
 F0 "U" 0 100 50 H V C CNN
 F1 "Asiste:nRF51x22-QFxx" 0 -100 50 H V C CNN
-F2 "Package_DFN_QFN:QFN-48-1EP_6x6mm_P0.4mm_EP4.66x4.66mm" 0 0 50 H I C CNN
-F3 "" -400 -100 50 H I C CNN
+F2 "ASISTE:QFN-48-1EP_6x6mm_Pitch0.4mm_ThermalVias" 50 -2400 50 H I C CNN
+F3 "https://www.nordicsemi.com/eng/Products/Bluetooth-low-energy/nRF51822/(language)/eng-GB" 150 -2150 50 H I C CNN
+F4 "nRF51822-QFAA-R7" 0 -2300 60 H I C CNN "man#"
 $FPLIST
  QFN*1EP*6x6mm*P0.4mm*
 $ENDFPLIST
