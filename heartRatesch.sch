@@ -258,21 +258,8 @@ Wire Wire Line
 Wire Wire Line
 	4950 3400 4950 3250
 Connection ~ 4950 3250
-$Comp
-L Asiste:+5V #PWR?
-U 1 1 5B7961FD
-P 6450 2350
-F 0 "#PWR?" H 6450 2200 50  0001 C CNN
-F 1 "+5V" H 6465 2523 50  0000 C CNN
-F 2 "" H 6450 2350 50  0001 C CNN
-F 3 "" H 6450 2350 50  0001 C CNN
-	1    6450 2350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6050 2900 6450 2900
-Wire Wire Line
-	6450 2900 6450 2350
 $Comp
 L Asiste:MAX30105 IC?
 U 1 1 5B77F5B0
@@ -294,4 +281,17 @@ Wire Wire Line
 Connection ~ 5950 4050
 Wire Wire Line
 	5950 4050 5950 4100
+Wire Wire Line
+	6450 2900 6450 2350
+$Comp
+L Asiste:+3V3 #PWR?
+U 1 1 5B8B05EF
+P 6450 2350
+F 0 "#PWR?" H 6450 2200 50  0001 C CNN
+F 1 "+3V3" H 6465 2523 50  0000 C CNN
+F 2 "" H 6450 2350 50  0001 C CNN
+F 3 "" H 6450 2350 50  0001 C CNN
+	1    6450 2350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
