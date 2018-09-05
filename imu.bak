@@ -84,10 +84,10 @@ F 3 "" H 4600 3100 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Connection ~ 5750 2950
-Text HLabel 6950 3550 2    60   Output ~ 0
+Text HLabel 7850 3550 2    60   Output ~ 0
 IMU_INT
 Wire Wire Line
-	6550 3550 6950 3550
+	6550 3550 7500 3550
 NoConn ~ 6550 3750
 NoConn ~ 6550 3850
 Wire Wire Line
@@ -275,4 +275,27 @@ F 4 "MPU-6050" H 6200 3200 60  0001 C CNN "man#"
 	1    5850 3850
 	1    0    0    -1  
 $EndComp
+$Comp
+L Asiste:R_0402_100k R403
+U 1 1 5B892CE4
+P 7500 3250
+F 0 "R403" H 7570 3296 50  0000 L CNN
+F 1 "R_0402_100k" H 7500 2700 50  0001 C CNN
+F 2 "ASISTE:R_0402" H 7500 2800 50  0001 C CNN
+F 3 "https://www.mouser.es/datasheet/2/427/rcge3-254226.pdf" H 7500 2900 50  0001 C CNN
+F 4 "RCG0402100KJNED" H 7450 3000 60  0001 C CNN "man#"
+F 5 "100k" H 7570 3205 50  0000 L CNN "Resistance"
+	1    7500 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 3400 7500 3550
+Connection ~ 7500 3550
+Wire Wire Line
+	7500 3550 7850 3550
+Wire Wire Line
+	7500 3100 7500 2650
+Wire Wire Line
+	7500 2650 5950 2650
+Connection ~ 5950 2650
 $EndSCHEMATC

@@ -1,0 +1,2133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/julio/proyecto/PCB/ASISTE_PCB/ASISTE.sch</source>
+    <date>mié 29 ago 2018 19:59:14 CEST</date>
+    <tool>Eeschema 5.0.0-fee4fd1~66~ubuntu18.04.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Main</title>
+        <company>ASISTE</company>
+        <rev>v1.0</rev>
+        <date>2018-08-15</date>
+        <source>ASISTE.sch</source>
+        <comment number="1" value="Julio López Moya"/>
+        <comment number="2" value="ASISTE"/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/heartRate/" tstamps="/5B55F5BB/">
+      <title_block>
+        <title>Heart Rate &amp; Oximeter</title>
+        <company>ASISTE</company>
+        <rev>v1.0</rev>
+        <date>2018-08-15</date>
+        <source>heartRatesch.sch</source>
+        <comment number="1" value="Julio López Moya"/>
+        <comment number="2" value="ASISTE"/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/power/" tstamps="/5B56C12F/">
+      <title_block>
+        <title>Battery Charger &amp; DC/DC Converters</title>
+        <company>ASISTE</company>
+        <rev>v1.0</rev>
+        <date>2018-08-15</date>
+        <source>power.sch</source>
+        <comment number="1" value="Julio López Moya"/>
+        <comment number="2" value="ASISTE"/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/imu/" tstamps="/5B56C4B2/">
+      <title_block>
+        <title>Inertial Measurement Unit</title>
+        <company>ASISTE</company>
+        <rev>v1.0</rev>
+        <date>2018-08-15</date>
+        <source>imu.sch</source>
+        <comment number="1" value="Julio López Moya"/>
+        <comment number="2" value="ASISTE"/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="5" name="/temperature/" tstamps="/5B7E0869/">
+      <title_block>
+        <title>Temperature</title>
+        <company>ASISTE</company>
+        <rev>v1.0</rev>
+        <date>2018-08-15</date>
+        <source>temperature.sch</source>
+        <comment number="1" value="Julio López Moya"/>
+        <comment number="2" value="ASISTE"/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="6" name="/micro/" tstamps="/5B56C637/">
+      <title_block>
+        <title>Microcontroller</title>
+        <company>ASISTE</company>
+        <rev>v1.0</rev>
+        <date>2018-08-15</date>
+        <source>micro.sch</source>
+        <comment number="1" value="Julio López Moya"/>
+        <comment number="2" value="ASISTE"/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="D101">
+      <value>LED_ARGB</value>
+      <footprint>ASISTE:LED_Cree-PLCC4_2x2mm_CW</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/90/CLMVC-FKC-1149316.pdf</datasheet>
+      <fields>
+        <field name="man#">CLMVC-FKC-CGJJM569aBB7a343</field>
+      </fields>
+      <libsource lib="Asiste" part="LED_ARGB" description="LED RGB, common anode (pin 1)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B7F5EAD</tstamp>
+    </comp>
+    <comp ref="R103">
+      <value>R_0402_100</value>
+      <footprint>ASISTE:R_0402</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/315/AOA0000C334-1314047.pdf</datasheet>
+      <fields>
+        <field name="Resistance">100</field>
+        <field name="man#">ERJ-U02D1000X</field>
+      </fields>
+      <libsource lib="Asiste" part="R_0402_100" description="Resistores de película gruesa - SMD 0402 0.5% 100ohm Anti-Sulfur AEC-Q200"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B787251</tstamp>
+    </comp>
+    <comp ref="R102">
+      <value>R_0402_33</value>
+      <footprint>ASISTE:R_0402</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/392/susumu_RR_Data_Sheet-1206438.pdf</datasheet>
+      <fields>
+        <field name="Resistance">33</field>
+        <field name="man#">RR0510R-330-D</field>
+      </fields>
+      <libsource lib="Asiste" part="R_0402_33" description="TResistores de película fina - SMD 1/16W 33ohm 0.5% 100ppm"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B78744C</tstamp>
+    </comp>
+    <comp ref="R101">
+      <value>R_0402_33</value>
+      <footprint>ASISTE:R_0402</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/392/susumu_RR_Data_Sheet-1206438.pdf</datasheet>
+      <fields>
+        <field name="Resistance">33</field>
+        <field name="man#">RR0510R-330-D</field>
+      </fields>
+      <libsource lib="Asiste" part="R_0402_33" description="TResistores de película fina - SMD 1/16W 33ohm 0.5% 100ppm"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B7874B2</tstamp>
+    </comp>
+    <comp ref="PROG101">
+      <value>SMD_01x06</value>
+      <footprint>ASISTE:SMD_PROG</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Asiste" part="SMD_01x06" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B936A3E</tstamp>
+    </comp>
+    <comp ref="C101">
+      <value>C_0603_1uF</value>
+      <footprint>ASISTE:C_0603</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/396/mlcc02_e-1307760.pdf</datasheet>
+      <fields>
+        <field name="Capacitance">1uF</field>
+        <field name="Voltage">10V</field>
+        <field name="man#">LMK107B7105KAHT</field>
+      </fields>
+      <libsource lib="Asiste" part="C_0603_1uF" description="Multilayer Ceramic Capacitors MLCC - SMD/SMT 1uF 10V X7R +/-10% 0603 AEC-Q200"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B93A003</tstamp>
+    </comp>
+    <comp ref="SW101">
+      <value>SW_SPST</value>
+      <footprint>ASISTE:SW_SPST_PTS810</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/60/pts810-1382876.pdf</datasheet>
+      <fields>
+        <field name="man#">PTS810SJK250SMTRLFS</field>
+      </fields>
+      <libsource lib="Asiste" part="SW_SPST" description="Interruptores táctiles TACT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B897F2A</tstamp>
+    </comp>
+    <comp ref="R104">
+      <value>R_0402_100</value>
+      <footprint>ASISTE:R_0402</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/315/AOA0000C334-1314047.pdf</datasheet>
+      <fields>
+        <field name="Resistance">100</field>
+        <field name="man#">ERJ-U02D1000X</field>
+      </fields>
+      <libsource lib="Asiste" part="R_0402_100" description="Resistores de película gruesa - SMD 0402 0.5% 100ohm Anti-Sulfur AEC-Q200"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B89881E</tstamp>
+    </comp>
+    <comp ref="C201">
+      <value>C_0603_4.7uF</value>
+      <footprint>ASISTE:C_0603</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/400/lcc_commercial_soft_en-520032.pdf</datasheet>
+      <fields>
+        <field name="Capacitance">4.7uF</field>
+        <field name="Voltage">10V</field>
+        <field name="man#">C1608X5R1A475K080AE</field>
+      </fields>
+      <libsource lib="Asiste" part="C_0603_4.7uF" description="Multilayer Ceramic Capacitors MLCC - SMD/SMT 0603 10V 4.70uF X5R 10% Soft Term"/>
+      <sheetpath names="/heartRate/" tstamps="/5B55F5BB/"/>
+      <tstamp>5B5650BB</tstamp>
+    </comp>
+    <comp ref="C202">
+      <value>C_0603_10uF</value>
+      <footprint>ASISTE:C_0603</footprint>
+      <datasheet>https://eu.mouser.com/datasheet/2/281/murata_03052018_GRM_Series_1-1310166.pdf</datasheet>
+      <fields>
+        <field name="Capacitance">10uF</field>
+        <field name="Voltage">6V3</field>
+        <field name="man#">GRM188R60J106KE47D</field>
+      </fields>
+      <libsource lib="" part="C_0603_10uF" description=""/>
+      <sheetpath names="/heartRate/" tstamps="/5B55F5BB/"/>
+      <tstamp>5B565E1E</tstamp>
+    </comp>
+    <comp ref="R201">
+      <value>R_0402_10k</value>
+      <footprint>ASISTE:R_0402</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/315/AOA0000C334-1314047.pdf</datasheet>
+      <fields>
+        <field name="Resistance">10k</field>
+        <field name="man#">ERJ-U02D1002X</field>
+      </fields>
+      <libsource lib="Asiste" part="R_0402_10k" description="Thick Film Resistors - SMD 0402 0.5% 10kOhm Anti-Sulfur AEC-Q200"/>
+      <sheetpath names="/heartRate/" tstamps="/5B55F5BB/"/>
+      <tstamp>5B566757</tstamp>
+    </comp>
+    <comp ref="R202">
+      <value>R_0402_10k</value>
+      <footprint>ASISTE:R_0402</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/315/AOA0000C334-1314047.pdf</datasheet>
+      <fields>
+        <field name="Resistance">10k</field>
+        <field name="man#">ERJ-U02D1002X</field>
+      </fields>
+      <libsource lib="Asiste" part="R_0402_10k" description="Thick Film Resistors - SMD 0402 0.5% 10kOhm Anti-Sulfur AEC-Q200"/>
+      <sheetpath names="/heartRate/" tstamps="/5B55F5BB/"/>
+      <tstamp>5B56687F</tstamp>
+    </comp>
+    <comp ref="R203">
+      <value>R_0402_10k</value>
+      <footprint>ASISTE:R_0402</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/315/AOA0000C334-1314047.pdf</datasheet>
+      <fields>
+        <field name="Resistance">10k</field>
+        <field name="man#">ERJ-U02D1002X</field>
+      </fields>
+      <libsource lib="Asiste" part="R_0402_10k" description="Thick Film Resistors - SMD 0402 0.5% 10kOhm Anti-Sulfur AEC-Q200"/>
+      <sheetpath names="/heartRate/" tstamps="/5B55F5BB/"/>
+      <tstamp>5B566B71</tstamp>
+    </comp>
+    <comp ref="Q201">
+      <value>BSS138</value>
+      <footprint>ASISTE:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf</datasheet>
+      <fields>
+        <field name="man#">BSS138</field>
+      </fields>
+      <libsource lib="Asiste" part="BSS138" description="50V Vds, 0.22A Id, N-channel MOSFET, SOT-23"/>
+      <sheetpath names="/heartRate/" tstamps="/5B55F5BB/"/>
+      <tstamp>5B747A70</tstamp>
+    </comp>
+    <comp ref="Q202">
+      <value>BSS138</value>
+      <footprint>ASISTE:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf</datasheet>
+      <fields>
+        <field name="man#">BSS138</field>
+      </fields>
+      <libsource lib="Asiste" part="BSS138" description="50V Vds, 0.22A Id, N-channel MOSFET, SOT-23"/>
+      <sheetpath names="/heartRate/" tstamps="/5B55F5BB/"/>
+      <tstamp>5B749C53</tstamp>
+    </comp>
+    <comp ref="Q203">
+      <value>BSS138</value>
+      <footprint>ASISTE:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf</datasheet>
+      <fields>
+        <field name="man#">BSS138</field>
+      </fields>
+      <libsource lib="Asiste" part="BSS138" description="50V Vds, 0.22A Id, N-channel MOSFET, SOT-23"/>
+      <sheetpath names="/heartRate/" tstamps="/5B55F5BB/"/>
+      <tstamp>5B750668</tstamp>
+    </comp>
+    <comp ref="IC201">
+      <value>MAX30105</value>
+      <footprint>ASISTE:Maxim_OLGA-14_3.3x5.6mm_P0.8mm</footprint>
+      <datasheet>https://datasheets.maximintegrated.com/en/ds/MAX30105.pdf</datasheet>
+      <fields>
+        <field name="man#">MAX30105EFD+</field>
+      </fields>
+      <libsource lib="Asiste" part="MAX30105" description="Heart Rate Sensor, 14-OLGA"/>
+      <sheetpath names="/heartRate/" tstamps="/5B55F5BB/"/>
+      <tstamp>5B8C1E27</tstamp>
+    </comp>
+    <comp ref="J301">
+      <value>USB_B_Micro</value>
+      <footprint>ASISTE:USB_Micro-B_Molex-105017-0001</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/276/1050170001_IO_CONNECTORS-230168.pdf</datasheet>
+      <fields>
+        <field name="man#">105017-0001</field>
+      </fields>
+      <libsource lib="Asiste" part="USB_B_Micro" description="USB Micro Type B connector"/>
+      <sheetpath names="/power/" tstamps="/5B56C12F/"/>
+      <tstamp>5B752AC5</tstamp>
+    </comp>
+    <comp ref="C301">
+      <value>C_0603_4.7uF</value>
+      <footprint>ASISTE:C_0603</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/400/lcc_commercial_soft_en-520032.pdf</datasheet>
+      <fields>
+        <field name="Capacitance">4.7uF</field>
+        <field name="Voltage">10V</field>
+        <field name="man#">C1608X5R1A475K080AE</field>
+      </fields>
+      <libsource lib="Asiste" part="C_0603_4.7uF" description="Multilayer Ceramic Capacitors MLCC - SMD/SMT 0603 10V 4.70uF X5R 10% Soft Term"/>
+      <sheetpath names="/power/" tstamps="/5B56C12F/"/>
+      <tstamp>5B745D35</tstamp>
+    </comp>
+    <comp ref="C302">
+      <value>C_0603_4.7uF</value>
+      <footprint>ASISTE:C_0603</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/400/lcc_commercial_soft_en-520032.pdf</datasheet>
+      <fields>
+        <field name="Capacitance">4.7uF</field>
+        <field name="Voltage">10V</field>
+        <field name="man#">C1608X5R1A475K080AE</field>
+      </fields>
+      <libsource lib="Asiste" part="C_0603_4.7uF" description="Multilayer Ceramic Capacitors MLCC - SMD/SMT 0603 10V 4.70uF X5R 10% Soft Term"/>
+      <sheetpath names="/power/" tstamps="/5B56C12F/"/>
+      <tstamp>5B74635C</tstamp>
+    </comp>
+    <comp ref="R301">
+      <value>R_0402_2k</value>
+      <footprint>ASISTE:R_0402</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/427/crcwce3-1223726.pdf</datasheet>
+      <fields>
+        <field name="Resistance">2k</field>
+        <field name="man#">CRCW04022K00JNEDC</field>
+      </fields>
+      <libsource lib="Asiste" part="R_0402_2k" description="Thick Film Resistors 1/16watt 2Kohms 5% Commercial Use"/>
+      <sheetpath names="/power/" tstamps="/5B56C12F/"/>
+      <tstamp>5B74B4B5</tstamp>
+    </comp>
+    <comp ref="R303">
+      <value>R_0402_2M2</value>
+      <footprint>ASISTE:R_0402</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/427/dcrcwe3-109170.pdf</datasheet>
+      <fields>
+        <field name="Resistance">2M2</field>
+        <field name="man#">CRCW04022M20JNED</field>
+      </fields>
+      <libsource lib="Asiste" part="R_0402_2M2" description="Thick Film Resistors 1/16watt 2.2Mohms 5%"/>
+      <sheetpath names="/power/" tstamps="/5B56C12F/"/>
+      <tstamp>5B74D1E7</tstamp>
+    </comp>
+    <comp ref="R302">
+      <value>R_0402_10M</value>
+      <footprint>ASISTE:R_0402</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/348/sfr-e-1099439.pdf</datasheet>
+      <fields>
+        <field name="Resistance">10M</field>
+        <field name="man#">SFR01MZPJ106</field>
+      </fields>
+      <libsource lib="Asiste" part="R_0402_10M" description="Thick Film Resistors 0402 10MOhm 5% Anti-Sulfur AEC-Q200"/>
+      <sheetpath names="/power/" tstamps="/5B56C12F/"/>
+      <tstamp>5B74D9F6</tstamp>
+    </comp>
+    <comp ref="J302">
+      <value>Conn_01x02</value>
+      <footprint>ASISTE:JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal</footprint>
+      <datasheet>https://katalog.we-online.com/em/datasheet/6651xx131822.pdf</datasheet>
+      <fields>
+        <field name="man#">665102131822</field>
+      </fields>
+      <libsource lib="Asiste" part="Conn_01x02" description="Alojamientos de cables y cabecera WR-WTB SMT Male 1mm Shrouded Hztl2P"/>
+      <sheetpath names="/power/" tstamps="/5B56C12F/"/>
+      <tstamp>5B79A067</tstamp>
+    </comp>
+    <comp ref="Q301">
+      <value>DMP1045U</value>
+      <footprint>ASISTE:SOT-23</footprint>
+      <datasheet>https://www.diodes.com/assets/Datasheets/DMP1045U.pdf</datasheet>
+      <fields>
+        <field name="man#">DMP1045U-7</field>
+      </fields>
+      <libsource lib="Asiste" part="DMP1045U" description="Transistor P-MOSFET with substrate diode (general)"/>
+      <sheetpath names="/power/" tstamps="/5B56C12F/"/>
+      <tstamp>5B86EC1C</tstamp>
+    </comp>
+    <comp ref="D301">
+      <value>D_Schottky</value>
+      <footprint>ASISTE:D_SOD-123</footprint>
+      <datasheet>https://www.diodes.com/assets/Datasheets/ds30308.pdf</datasheet>
+      <fields>
+        <field name="man#">B130LAW-7-F</field>
+      </fields>
+      <libsource lib="Asiste" part="D_Schottky" description="Schottky diode"/>
+      <sheetpath names="/power/" tstamps="/5B56C12F/"/>
+      <tstamp>5B8728BF</tstamp>
+    </comp>
+    <comp ref="C306">
+      <value>C_0603_1uF</value>
+      <footprint>ASISTE:C_0603</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/396/mlcc02_e-1307760.pdf</datasheet>
+      <fields>
+        <field name="Capacitance">1uF</field>
+        <field name="Voltage">10V</field>
+        <field name="man#">LMK107B7105KAHT</field>
+      </fields>
+      <libsource lib="Asiste" part="C_0603_1uF" description="Multilayer Ceramic Capacitors MLCC - SMD/SMT 1uF 10V X7R +/-10% 0603 AEC-Q200"/>
+      <sheetpath names="/power/" tstamps="/5B56C12F/"/>
+      <tstamp>5B875437</tstamp>
+    </comp>
+    <comp ref="R304">
+      <value>R_0402_100k</value>
+      <footprint>ASISTE:R_0402</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/427/rcge3-254226.pdf</datasheet>
+      <fields>
+        <field name="Resistance">100k</field>
+        <field name="man#">RCG0402100KJNED</field>
+      </fields>
+      <libsource lib="Asiste" part="R_0402_100k" description="Resistores de película gruesa - SMD .063watt 100kohms 5% 0402 200ppm"/>
+      <sheetpath names="/power/" tstamps="/5B56C12F/"/>
+      <tstamp>5B87AE63</tstamp>
+    </comp>
+    <comp ref="U302">
+      <value>XC6415CC91MR-G</value>
+      <footprint>ASISTE:TSOT-23-6</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/760/XC6415-846928.pdf</datasheet>
+      <fields>
+        <field name="man#">XC6415CC91MR-G</field>
+      </fields>
+      <libsource lib="" part="XC6415CC91MR-G" description=""/>
+      <sheetpath names="/power/" tstamps="/5B56C12F/"/>
+      <tstamp>5B890199</tstamp>
+    </comp>
+    <comp ref="C305">
+      <value>C_0603_1uF</value>
+      <footprint>ASISTE:C_0603</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/396/mlcc02_e-1307760.pdf</datasheet>
+      <fields>
+        <field name="Capacitance">1uF</field>
+        <field name="Voltage">10V</field>
+        <field name="man#">LMK107B7105KAHT</field>
+      </fields>
+      <libsource lib="Asiste" part="C_0603_1uF" description="Multilayer Ceramic Capacitors MLCC - SMD/SMT 1uF 10V X7R +/-10% 0603 AEC-Q200"/>
+      <sheetpath names="/power/" tstamps="/5B56C12F/"/>
+      <tstamp>5B89B89A</tstamp>
+    </comp>
+    <comp ref="C304">
+      <value>C_0603_1uF</value>
+      <footprint>ASISTE:C_0603</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/396/mlcc02_e-1307760.pdf</datasheet>
+      <fields>
+        <field name="Capacitance">1uF</field>
+        <field name="Voltage">10V</field>
+        <field name="man#">LMK107B7105KAHT</field>
+      </fields>
+      <libsource lib="Asiste" part="C_0603_1uF" description="Multilayer Ceramic Capacitors MLCC - SMD/SMT 1uF 10V X7R +/-10% 0603 AEC-Q200"/>
+      <sheetpath names="/power/" tstamps="/5B56C12F/"/>
+      <tstamp>5B89B95E</tstamp>
+    </comp>
+    <comp ref="C303">
+      <value>C_0603_1uF</value>
+      <footprint>ASISTE:C_0603</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/396/mlcc02_e-1307760.pdf</datasheet>
+      <fields>
+        <field name="Capacitance">1uF</field>
+        <field name="Voltage">10V</field>
+        <field name="man#">LMK107B7105KAHT</field>
+      </fields>
+      <libsource lib="Asiste" part="C_0603_1uF" description="Multilayer Ceramic Capacitors MLCC - SMD/SMT 1uF 10V X7R +/-10% 0603 AEC-Q200"/>
+      <sheetpath names="/power/" tstamps="/5B56C12F/"/>
+      <tstamp>5B8A2E24</tstamp>
+    </comp>
+    <comp ref="U301">
+      <value>MCP73831</value>
+      <footprint>ASISTE:TSOT-23-5</footprint>
+      <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf</datasheet>
+      <fields>
+        <field name="man#">MCP73831T-2ACI/OT</field>
+      </fields>
+      <libsource lib="Asiste" part="MCP73831" description="Single cell, Li-Ion/Li-Po charge management controller, 4.20V, Open-Drain Status Output, in SOT23-5 package"/>
+      <sheetpath names="/power/" tstamps="/5B56C12F/"/>
+      <tstamp>5B8C4CF4</tstamp>
+    </comp>
+    <comp ref="C404">
+      <value>C_0402_2.2nF</value>
+      <footprint>ASISTE:C_0402</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/445/885012205027-554116.pdf</datasheet>
+      <fields>
+        <field name="Capacitance">2.2nF</field>
+        <field name="Voltage">16V</field>
+        <field name="man#">885012205027</field>
+      </fields>
+      <libsource lib="Asiste" part="C_0402_2.2nF" description="Multilayer Ceramic Capacitors MLCC - SMD/SMT WCAP-CSGP 2200pF 0402 10% 16V MLCC"/>
+      <sheetpath names="/imu/" tstamps="/5B56C4B2/"/>
+      <tstamp>5B370B27</tstamp>
+    </comp>
+    <comp ref="C403">
+      <value>C_0402_100nF</value>
+      <footprint>ASISTE:C_0402</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/281/murata_03122018_GCM_Series-1310150.pdf</datasheet>
+      <fields>
+        <field name="Capacitance">100nF</field>
+        <field name="Voltage">16V</field>
+        <field name="man#">GCM155R71C104KA55D</field>
+      </fields>
+      <libsource lib="Asiste" part="C_0402_100nF" description="Multilayer Ceramic Capacitors MLCC - SMD/SMT 0402 0.1uF 16volts X7R 10%"/>
+      <sheetpath names="/imu/" tstamps="/5B56C4B2/"/>
+      <tstamp>5B370BA6</tstamp>
+    </comp>
+    <comp ref="R401">
+      <value>R_0402_10k</value>
+      <footprint>ASISTE:R_0402</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/315/AOA0000C334-1314047.pdf</datasheet>
+      <fields>
+        <field name="Resistance">10k</field>
+        <field name="man#">ERJ-U02D1002X</field>
+      </fields>
+      <libsource lib="Asiste" part="R_0402_10k" description="Thick Film Resistors - SMD 0402 0.5% 10kOhm Anti-Sulfur AEC-Q200"/>
+      <sheetpath names="/imu/" tstamps="/5B56C4B2/"/>
+      <tstamp>5B370C5C</tstamp>
+    </comp>
+    <comp ref="R402">
+      <value>R_0402_10k</value>
+      <footprint>ASISTE:R_0402</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/315/AOA0000C334-1314047.pdf</datasheet>
+      <fields>
+        <field name="Resistance">10k</field>
+        <field name="man#">ERJ-U02D1002X</field>
+      </fields>
+      <libsource lib="Asiste" part="R_0402_10k" description="Thick Film Resistors - SMD 0402 0.5% 10kOhm Anti-Sulfur AEC-Q200"/>
+      <sheetpath names="/imu/" tstamps="/5B56C4B2/"/>
+      <tstamp>5B370CF9</tstamp>
+    </comp>
+    <comp ref="C401">
+      <value>C_0402_100nF</value>
+      <footprint>ASISTE:C_0402</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/281/murata_03122018_GCM_Series-1310150.pdf</datasheet>
+      <fields>
+        <field name="Capacitance">100nF</field>
+        <field name="Voltage">16V</field>
+        <field name="man#">GCM155R71C104KA55D</field>
+      </fields>
+      <libsource lib="Asiste" part="C_0402_100nF" description="Multilayer Ceramic Capacitors MLCC - SMD/SMT 0402 0.1uF 16volts X7R 10%"/>
+      <sheetpath names="/imu/" tstamps="/5B56C4B2/"/>
+      <tstamp>5B370D24</tstamp>
+    </comp>
+    <comp ref="C402">
+      <value>C_0402_100nF</value>
+      <footprint>ASISTE:C_0402</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/281/murata_03122018_GCM_Series-1310150.pdf</datasheet>
+      <fields>
+        <field name="Capacitance">100nF</field>
+        <field name="Voltage">16V</field>
+        <field name="man#">GCM155R71C104KA55D</field>
+      </fields>
+      <libsource lib="Asiste" part="C_0402_100nF" description="Multilayer Ceramic Capacitors MLCC - SMD/SMT 0402 0.1uF 16volts X7R 10%"/>
+      <sheetpath names="/imu/" tstamps="/5B56C4B2/"/>
+      <tstamp>5B370E13</tstamp>
+    </comp>
+    <comp ref="U401">
+      <value>MPU-6050</value>
+      <footprint>ASISTE:QFN-24-1EP_4x4mm_Pitch0.5mm</footprint>
+      <datasheet>https://www.invensense.com/wp-content/uploads/2015/02/MPU-6000-Datasheet1.pdf</datasheet>
+      <fields>
+        <field name="man#">MPU-6050</field>
+      </fields>
+      <libsource lib="Asiste" part="MPU-6050" description="IMUs - Inertial Measurement Units 6-Axis MEMS MotionTracking Device with DMP"/>
+      <sheetpath names="/imu/" tstamps="/5B56C4B2/"/>
+      <tstamp>5B56BC2F</tstamp>
+    </comp>
+    <comp ref="U501">
+      <value>TMP112AIDRLR</value>
+      <footprint>ASISTE:SOT-563</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/tmp112.pdf</datasheet>
+      <fields>
+        <field name="man#">TMP112AIDRLR</field>
+      </fields>
+      <libsource lib="Asiste" part="TMP112AIDRLR" description="SENSOR TEMP I2C/SMBUS SOT563"/>
+      <sheetpath names="/temperature/" tstamps="/5B7E0869/"/>
+      <tstamp>5B7E0916</tstamp>
+    </comp>
+    <comp ref="R502">
+      <value>R_0402_10k</value>
+      <footprint>ASISTE:R_0402</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/315/AOA0000C334-1314047.pdf</datasheet>
+      <fields>
+        <field name="Resistance">10k</field>
+        <field name="man#">ERJ-U02D1002X</field>
+      </fields>
+      <libsource lib="Asiste" part="R_0402_10k" description="Thick Film Resistors - SMD 0402 0.5% 10kOhm Anti-Sulfur AEC-Q200"/>
+      <sheetpath names="/temperature/" tstamps="/5B7E0869/"/>
+      <tstamp>5B7E0A13</tstamp>
+    </comp>
+    <comp ref="R501">
+      <value>R_0402_10k</value>
+      <footprint>ASISTE:R_0402</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/315/AOA0000C334-1314047.pdf</datasheet>
+      <fields>
+        <field name="Resistance">10k</field>
+        <field name="man#">ERJ-U02D1002X</field>
+      </fields>
+      <libsource lib="Asiste" part="R_0402_10k" description="Thick Film Resistors - SMD 0402 0.5% 10kOhm Anti-Sulfur AEC-Q200"/>
+      <sheetpath names="/temperature/" tstamps="/5B7E0869/"/>
+      <tstamp>5B7E0A91</tstamp>
+    </comp>
+    <comp ref="R503">
+      <value>R_0402_10k</value>
+      <footprint>ASISTE:R_0402</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/315/AOA0000C334-1314047.pdf</datasheet>
+      <fields>
+        <field name="Resistance">10k</field>
+        <field name="man#">ERJ-U02D1002X</field>
+      </fields>
+      <libsource lib="Asiste" part="R_0402_10k" description="Thick Film Resistors - SMD 0402 0.5% 10kOhm Anti-Sulfur AEC-Q200"/>
+      <sheetpath names="/temperature/" tstamps="/5B7E0869/"/>
+      <tstamp>5B7E0E26</tstamp>
+    </comp>
+    <comp ref="C501">
+      <value>C_0402_100nF</value>
+      <footprint>ASISTE:C_0402</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/281/murata_03122018_GCM_Series-1310150.pdf</datasheet>
+      <fields>
+        <field name="Capacitance">100nF</field>
+        <field name="Voltage">16V</field>
+        <field name="man#">GCM155R71C104KA55D</field>
+      </fields>
+      <libsource lib="Asiste" part="C_0402_100nF" description="Multilayer Ceramic Capacitors MLCC - SMD/SMT 0402 0.1uF 16volts X7R 10%"/>
+      <sheetpath names="/temperature/" tstamps="/5B7E0869/"/>
+      <tstamp>5B7E174A</tstamp>
+    </comp>
+    <comp ref="Y601">
+      <value>Crystal_GND24_2520</value>
+      <footprint>ASISTE:Crystal_SMD_2520-4pin_2.5x2.0mm</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/122/ECX-2236Q-938171.pdf</datasheet>
+      <fields>
+        <field name="Frecuency">16MHz</field>
+        <field name="man#">ECS-160-10-36Q-ES-TR</field>
+      </fields>
+      <libsource lib="Asiste" part="Crystal_GND24_2520" description="Crystals 16MHz 10pF 30ppm -40C +125C AEC-Q200"/>
+      <sheetpath names="/micro/" tstamps="/5B56C637/"/>
+      <tstamp>5B3704C6</tstamp>
+    </comp>
+    <comp ref="C602">
+      <value>C_0402_12pF</value>
+      <footprint>ASISTE:C_0402</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/281/GCM1555C1H120GA16-01-1064161.pdf</datasheet>
+      <fields>
+        <field name="Capacitance">12pF</field>
+        <field name="Voltage">50V</field>
+        <field name="man#">GCM1555C1H120GA16D</field>
+      </fields>
+      <libsource lib="Asiste" part="C_0402_12pF" description="Multilayer Ceramic Capacitors MLCC - SMD/SMT 0402 12pF 50volts C0G 2%"/>
+      <sheetpath names="/micro/" tstamps="/5B56C637/"/>
+      <tstamp>5B370614</tstamp>
+    </comp>
+    <comp ref="C603">
+      <value>C_0402_12pF</value>
+      <footprint>ASISTE:C_0402</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/281/GCM1555C1H120GA16-01-1064161.pdf</datasheet>
+      <fields>
+        <field name="Capacitance">12pF</field>
+        <field name="Voltage">50V</field>
+        <field name="man#">GCM1555C1H120GA16D</field>
+      </fields>
+      <libsource lib="Asiste" part="C_0402_12pF" description="Multilayer Ceramic Capacitors MLCC - SMD/SMT 0402 12pF 50volts C0G 2%"/>
+      <sheetpath names="/micro/" tstamps="/5B56C637/"/>
+      <tstamp>5B3706F1</tstamp>
+    </comp>
+    <comp ref="C609">
+      <value>C_0402_100nF</value>
+      <footprint>ASISTE:C_0402</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/281/murata_03122018_GCM_Series-1310150.pdf</datasheet>
+      <fields>
+        <field name="Capacitance">100nF</field>
+        <field name="Voltage">16V</field>
+        <field name="man#">GCM155R71C104KA55D</field>
+      </fields>
+      <libsource lib="Asiste" part="C_0402_100nF" description="Multilayer Ceramic Capacitors MLCC - SMD/SMT 0402 0.1uF 16volts X7R 10%"/>
+      <sheetpath names="/micro/" tstamps="/5B56C637/"/>
+      <tstamp>5B37082F</tstamp>
+    </comp>
+    <comp ref="C608">
+      <value>C_0402_47nF</value>
+      <footprint>ASISTE:C_0402</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/445/885012205054-554192.pdf</datasheet>
+      <fields>
+        <field name="Capacitance">47nF</field>
+        <field name="Voltage">25V</field>
+        <field name="man#">885012205054</field>
+      </fields>
+      <libsource lib="Asiste" part="C_0402_47nF" description="Multilayer Ceramic Capacitors MLCC - SMD/SMT WCAP-CSGP 47000pF 0402 10% 25V MLCC"/>
+      <sheetpath names="/micro/" tstamps="/5B56C637/"/>
+      <tstamp>5B3708DB</tstamp>
+    </comp>
+    <comp ref="L603">
+      <value>L_0603_10uH</value>
+      <footprint>ASISTE:L_0603</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/400/nductor_commercial_decoupling_mlz1608_en-837720.pdf</datasheet>
+      <fields>
+        <field name="Inductance">10uH</field>
+        <field name="man#">MLZ1608E100MT</field>
+      </fields>
+      <libsource lib="Asiste" part="L_0603_10uH" description="Fixed Inductors 0603 10uH 20%"/>
+      <sheetpath names="/micro/" tstamps="/5B56C637/"/>
+      <tstamp>5B3710C0</tstamp>
+    </comp>
+    <comp ref="L604">
+      <value>L_0402_15nH</value>
+      <footprint>ASISTE:L_0402</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/400/nductor_commercial_high-frequency_mlk1005_en-918318.pdf</datasheet>
+      <fields>
+        <field name="Inductance">15nH</field>
+        <field name="man#">MLK1005S15NJ</field>
+      </fields>
+      <libsource lib="Asiste" part="L_0402_15nH" description="Fixed Inductors 0402 15nH 5%"/>
+      <sheetpath names="/micro/" tstamps="/5B56C637/"/>
+      <tstamp>5B371352</tstamp>
+    </comp>
+    <comp ref="C610">
+      <value>C_0603_1uF</value>
+      <footprint>ASISTE:C_0603</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/396/mlcc02_e-1307760.pdf</datasheet>
+      <fields>
+        <field name="Capacitance">1uF</field>
+        <field name="Voltage">10V</field>
+        <field name="man#">LMK107B7105KAHT</field>
+      </fields>
+      <libsource lib="Asiste" part="C_0603_1uF" description="Multilayer Ceramic Capacitors MLCC - SMD/SMT 1uF 10V X7R +/-10% 0603 AEC-Q200"/>
+      <sheetpath names="/micro/" tstamps="/5B56C637/"/>
+      <tstamp>5B371645</tstamp>
+    </comp>
+    <comp ref="C605">
+      <value>C_0402_1nF</value>
+      <footprint>ASISTE:C_0402</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/445/885012205006-611013.pdf</datasheet>
+      <fields>
+        <field name="Capacitance">1nF</field>
+        <field name="Voltage">10V</field>
+        <field name="man#">885012205006</field>
+      </fields>
+      <libsource lib="Asiste" part="C_0402_1nF" description="Multilayer Ceramic Capacitors MLCC - SMD/SMT WCAP-CSGP 1000pF 0402 10% 10V MLCC"/>
+      <sheetpath names="/micro/" tstamps="/5B56C637/"/>
+      <tstamp>5B371AE1</tstamp>
+    </comp>
+    <comp ref="C607">
+      <value>C_0603_4.7uF</value>
+      <footprint>ASISTE:C_0603</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/400/lcc_commercial_soft_en-520032.pdf</datasheet>
+      <fields>
+        <field name="Capacitance">4.7uF</field>
+        <field name="Voltage">10V</field>
+        <field name="man#">C1608X5R1A475K080AE</field>
+      </fields>
+      <libsource lib="Asiste" part="C_0603_4.7uF" description="Multilayer Ceramic Capacitors MLCC - SMD/SMT 0603 10V 4.70uF X5R 10% Soft Term"/>
+      <sheetpath names="/micro/" tstamps="/5B56C637/"/>
+      <tstamp>5B371CAF</tstamp>
+    </comp>
+    <comp ref="C606">
+      <value>C_0402_100nF</value>
+      <footprint>ASISTE:C_0402</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/281/murata_03122018_GCM_Series-1310150.pdf</datasheet>
+      <fields>
+        <field name="Capacitance">100nF</field>
+        <field name="Voltage">16V</field>
+        <field name="man#">GCM155R71C104KA55D</field>
+      </fields>
+      <libsource lib="Asiste" part="C_0402_100nF" description="Multilayer Ceramic Capacitors MLCC - SMD/SMT 0402 0.1uF 16volts X7R 10%"/>
+      <sheetpath names="/micro/" tstamps="/5B56C637/"/>
+      <tstamp>5B372252</tstamp>
+    </comp>
+    <comp ref="C604">
+      <value>C_0402_2.2nF</value>
+      <footprint>ASISTE:C_0402</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/445/885012205027-554116.pdf</datasheet>
+      <fields>
+        <field name="Capacitance">2.2nF</field>
+        <field name="Voltage">16V</field>
+        <field name="man#">885012205027</field>
+      </fields>
+      <libsource lib="Asiste" part="C_0402_2.2nF" description="Multilayer Ceramic Capacitors MLCC - SMD/SMT WCAP-CSGP 2200pF 0402 10% 16V MLCC"/>
+      <sheetpath names="/micro/" tstamps="/5B56C637/"/>
+      <tstamp>5B64281A</tstamp>
+    </comp>
+    <comp ref="R602">
+      <value>R_0402_10k</value>
+      <footprint>ASISTE:R_0402</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/315/AOA0000C334-1314047.pdf</datasheet>
+      <fields>
+        <field name="Resistance">10k</field>
+        <field name="man#">ERJ-U02D1002X</field>
+      </fields>
+      <libsource lib="Asiste" part="R_0402_10k" description="Thick Film Resistors - SMD 0402 0.5% 10kOhm Anti-Sulfur AEC-Q200"/>
+      <sheetpath names="/micro/" tstamps="/5B56C637/"/>
+      <tstamp>5B759306</tstamp>
+    </comp>
+    <comp ref="R601">
+      <value>R_0402_10k</value>
+      <footprint>ASISTE:R_0402</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/315/AOA0000C334-1314047.pdf</datasheet>
+      <fields>
+        <field name="Resistance">10k</field>
+        <field name="man#">ERJ-U02D1002X</field>
+      </fields>
+      <libsource lib="Asiste" part="R_0402_10k" description="Thick Film Resistors - SMD 0402 0.5% 10kOhm Anti-Sulfur AEC-Q200"/>
+      <sheetpath names="/micro/" tstamps="/5B56C637/"/>
+      <tstamp>5B767ABA</tstamp>
+    </comp>
+    <comp ref="R603">
+      <value>R_0402_10k</value>
+      <footprint>ASISTE:R_0402</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/315/AOA0000C334-1314047.pdf</datasheet>
+      <fields>
+        <field name="Resistance">10k</field>
+        <field name="man#">ERJ-U02D1002X</field>
+      </fields>
+      <libsource lib="Asiste" part="R_0402_10k" description="Thick Film Resistors - SMD 0402 0.5% 10kOhm Anti-Sulfur AEC-Q200"/>
+      <sheetpath names="/micro/" tstamps="/5B56C637/"/>
+      <tstamp>5B76A749</tstamp>
+    </comp>
+    <comp ref="ANT601">
+      <value>2450BM14E0003</value>
+      <footprint>ASISTE:BALUN-2450BM14E0003</footprint>
+      <datasheet>https://www.johansontechnology.com/datasheets/baluns/2450BM14E0003.pdf</datasheet>
+      <fields>
+        <field name="man#">2450BM14E0003T</field>
+      </fields>
+      <libsource lib="Asiste" part="2450BM14E0003" description=""/>
+      <sheetpath names="/micro/" tstamps="/5B56C637/"/>
+      <tstamp>5B8E9002</tstamp>
+    </comp>
+    <comp ref="AE601">
+      <value>Antenna_Chip</value>
+      <footprint>ASISTE:ANT</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/611/johanson_2450AT18B100E-1215778.pdf</datasheet>
+      <fields>
+        <field name="man#">2450AT18B100E</field>
+      </fields>
+      <libsource lib="Asiste" part="Antenna_Chip" description="Ceramic Chip Antenna symbol with pin for PCB trace"/>
+      <sheetpath names="/micro/" tstamps="/5B56C637/"/>
+      <tstamp>5B87043F</tstamp>
+    </comp>
+    <comp ref="C601">
+      <value>C_0402_1.2pF</value>
+      <footprint>ASISTE:C_0402</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/611/JTI-CAT-MLCC-HighQ-1101025.pdf</datasheet>
+      <fields>
+        <field name="Capacitance">1.2pF</field>
+        <field name="Voltage">50V</field>
+        <field name="man#">500R07S1R2BV4T</field>
+      </fields>
+      <libsource lib="Asiste" part="C_0402_1.2pF" description="Condensadores de cerámica multicapa (MLCC- SMD/SMT) 50volts 1.2pF ULTRA HIGH Q NPO"/>
+      <sheetpath names="/micro/" tstamps="/5B56C637/"/>
+      <tstamp>5B892EC3</tstamp>
+    </comp>
+    <comp ref="L602">
+      <value>L_0402_2.7nH</value>
+      <footprint>ASISTE:L_0402</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/611/jti-cat-rf-ind-844822.pdf</datasheet>
+      <fields>
+        <field name="Inductance">2.7nH</field>
+        <field name="man#">L-07C2N7SV6T</field>
+      </fields>
+      <libsource lib="Asiste" part="L_0402_2.7nH" description="Inductores fijos 2.7nH"/>
+      <sheetpath names="/micro/" tstamps="/5B56C637/"/>
+      <tstamp>5B8930FD</tstamp>
+    </comp>
+    <comp ref="L601">
+      <value>L_0402_3.3nH</value>
+      <footprint>ASISTE:L_0402</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/611/jti-cat-rf-ind-844822.pdf</datasheet>
+      <fields>
+        <field name="Inductance">3.3nH</field>
+        <field name="man#">L-07C3N3SV6T</field>
+      </fields>
+      <libsource lib="Asiste" part="L_0402_3.3nH" description="Inductores fijos 3.3nH"/>
+      <sheetpath names="/micro/" tstamps="/5B56C637/"/>
+      <tstamp>5B893257</tstamp>
+    </comp>
+    <comp ref="U601">
+      <value>nRF51x22-QFxx</value>
+      <footprint>ASISTE:QFN-48-1EP_6x6mm_Pitch0.4mm_ThermalVias</footprint>
+      <datasheet>https://www.nordicsemi.com/eng/Products/Bluetooth-low-energy/nRF51822/(language)/eng-GB</datasheet>
+      <fields>
+        <field name="man#">nRF51822-QFAA-R7</field>
+      </fields>
+      <libsource lib="Asiste" part="nRF51x22-QFxx" description="Sistemas RF en un chip (SoC) 2.4GHz BT low Energy 256KB Flash 16KB Ram"/>
+      <sheetpath names="/micro/" tstamps="/5B56C637/"/>
+      <tstamp>5B8C40A9</tstamp>
+    </comp>
+    <comp ref="Y602">
+      <value>Crystal_3.2x1.5</value>
+      <footprint>ASISTE:Crystal_SMD_G8-2Pin_3.2x1.5mm</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/741/LFXTAL009706Bulk-940434.pdf</datasheet>
+      <fields>
+        <field name="Frecuency">32.7680 KHz</field>
+        <field name="man#">LFXTAL009706Bulk</field>
+      </fields>
+      <libsource lib="Asiste" part="Crystal_3.2x1.5" description="Two pin crystalCristales 32.7680kHz 3.2 x 1.5 x 0.9mm"/>
+      <sheetpath names="/micro/" tstamps="/5B56C637/"/>
+      <tstamp>5B8CA5DD</tstamp>
+    </comp>
+    <comp ref="C611">
+      <value>C_0402_12pF</value>
+      <footprint>ASISTE:C_0402</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/281/GCM1555C1H120GA16-01-1064161.pdf</datasheet>
+      <fields>
+        <field name="Capacitance">12pF</field>
+        <field name="Voltage">50V</field>
+        <field name="man#">GCM1555C1H120GA16D</field>
+      </fields>
+      <libsource lib="Asiste" part="C_0402_12pF" description="Multilayer Ceramic Capacitors MLCC - SMD/SMT 0402 12pF 50volts C0G 2%"/>
+      <sheetpath names="/micro/" tstamps="/5B56C637/"/>
+      <tstamp>5B8D26A3</tstamp>
+    </comp>
+    <comp ref="C612">
+      <value>C_0402_12pF</value>
+      <footprint>ASISTE:C_0402</footprint>
+      <datasheet>https://www.mouser.es/datasheet/2/281/GCM1555C1H120GA16-01-1064161.pdf</datasheet>
+      <fields>
+        <field name="Capacitance">12pF</field>
+        <field name="Voltage">50V</field>
+        <field name="man#">GCM1555C1H120GA16D</field>
+      </fields>
+      <libsource lib="Asiste" part="C_0402_12pF" description="Multilayer Ceramic Capacitors MLCC - SMD/SMT 0402 12pF 50volts C0G 2%"/>
+      <sheetpath names="/micro/" tstamps="/5B56C637/"/>
+      <tstamp>5B8D285F</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="" part="Asiste:C_0603_10uF">
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">Asiste:C_0603_10uF</field>
+        <field name="Footprint">ASISTE:C_0603</field>
+        <field name="Datasheet">https://eu.mouser.com/datasheet/2/281/murata_03052018_GRM_Series_1-1310166.pdf</field>
+        <field name="man#">GRM188R60J106KE47D</field>
+        <field name="Capacitance">10uF</field>
+        <field name="Voltage">6V3</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="" part="Asiste:XC6415CC91MR-G">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">Asiste:XC6415CC91MR-G</field>
+        <field name="Footprint">ASISTE:TSOT-23-6</field>
+        <field name="Datasheet">https://www.mouser.es/datasheet/2/760/XC6415-846928.pdf</field>
+        <field name="man#">XC6415CC91MR-G</field>
+      </fields>
+      <pins>
+        <pin num="1" name="EN1" type="passive"/>
+        <pin num="2" name="VIN" type="power_in"/>
+        <pin num="3" name="EN2" type="passive"/>
+        <pin num="4" name="VOUT2" type="power_out"/>
+        <pin num="5" name="VSS" type="power_in"/>
+        <pin num="6" name="VOUT1" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="Asiste" part="2450BM14E0003">
+      <fields>
+        <field name="Reference">ANT</field>
+        <field name="Value">2450BM14E0003</field>
+        <field name="Footprint">ASISTE:BALUN-2450BM14E0003</field>
+        <field name="Datasheet">https://www.johansontechnology.com/datasheets/baluns/2450BM14E0003.pdf</field>
+        <field name="man#">2450BM14E0003T</field>
+      </fields>
+      <pins>
+        <pin num="1" name="UBAL" type="passive"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="BAL1" type="passive"/>
+        <pin num="4" name="BAL2" type="passive"/>
+        <pin num="5" name="DC" type="passive"/>
+        <pin num="6" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Asiste" part="Antenna_Chip">
+      <description>Ceramic Chip Antenna symbol with pin for PCB trace</description>
+      <docs>https://www.mouser.es/datasheet/2/611/johanson_2450AT18B100E-1215778.pdf</docs>
+      <fields>
+        <field name="Reference">AE</field>
+        <field name="Value">Antenna_Chip</field>
+        <field name="Footprint">ASISTE:ANT</field>
+        <field name="Datasheet">https://www.mouser.es/datasheet/2/611/johanson_2450AT18B100E-1215778.pdf</field>
+        <field name="man#">2450AT18B100E</field>
+      </fields>
+      <pins>
+        <pin num="1" name="FEED" type="input"/>
+        <pin num="2" name="PCB_Trace" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Asiste" part="BSS138">
+      <aliases>
+        <alias>2N7002</alias>
+        <alias>MMBF170</alias>
+      </aliases>
+      <description>50V Vds, 0.22A Id, N-channel MOSFET, SOT-23</description>
+      <docs>https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">BSS138</field>
+        <field name="Footprint">ASISTE:SOT-23</field>
+        <field name="Datasheet">https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf</field>
+        <field name="man#">BSS138</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Asiste" part="C_0402_1.2pF">
+      <description>Condensadores de cerámica multicapa (MLCC- SMD/SMT) 50volts 1.2pF ULTRA HIGH Q NPO</description>
+      <docs>https://www.mouser.es/datasheet/2/611/JTI-CAT-MLCC-HighQ-1101025.pdf</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_0402_1.2pF</field>
+        <field name="Footprint">ASISTE:C_0402</field>
+        <field name="Datasheet">https://www.mouser.es/datasheet/2/611/JTI-CAT-MLCC-HighQ-1101025.pdf</field>
+        <field name="man#">500R07S1R2BV4T</field>
+        <field name="Capacitance">1.2pF</field>
+        <field name="Voltage">50V</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Asiste" part="C_0402_100nF">
+      <description>Multilayer Ceramic Capacitors MLCC - SMD/SMT 0402 0.1uF 16volts X7R 10%</description>
+      <docs>https://www.mouser.es/datasheet/2/281/murata_03122018_GCM_Series-1310150.pdf</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_0402_100nF</field>
+        <field name="Footprint">ASISTE:C_0402</field>
+        <field name="Datasheet">https://www.mouser.es/datasheet/2/281/murata_03122018_GCM_Series-1310150.pdf</field>
+        <field name="man#">GCM155R71C104KA55D</field>
+        <field name="Capacitance">100nF</field>
+        <field name="Voltage">16V</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Asiste" part="C_0402_12pF">
+      <description>Multilayer Ceramic Capacitors MLCC - SMD/SMT 0402 12pF 50volts C0G 2%</description>
+      <docs>https://www.mouser.es/datasheet/2/281/GCM1555C1H120GA16-01-1064161.pdf</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_0402_12pF</field>
+        <field name="Footprint">ASISTE:C_0402</field>
+        <field name="Datasheet">https://www.mouser.es/datasheet/2/281/GCM1555C1H120GA16-01-1064161.pdf</field>
+        <field name="man#">GCM1555C1H120GA16D</field>
+        <field name="Capacitance">12pF</field>
+        <field name="Voltage">50V</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Asiste" part="C_0402_1nF">
+      <description>Multilayer Ceramic Capacitors MLCC - SMD/SMT WCAP-CSGP 1000pF 0402 10% 10V MLCC</description>
+      <docs>https://www.mouser.es/datasheet/2/445/885012205006-611013.pdf</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_0402_1nF</field>
+        <field name="Footprint">ASISTE:C_0402</field>
+        <field name="Datasheet">https://www.mouser.es/datasheet/2/445/885012205006-611013.pdf</field>
+        <field name="man#">885012205006</field>
+        <field name="Capacitance">1nF</field>
+        <field name="Voltage">10V</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Asiste" part="C_0402_2.2nF">
+      <description>Multilayer Ceramic Capacitors MLCC - SMD/SMT WCAP-CSGP 2200pF 0402 10% 16V MLCC</description>
+      <docs>https://www.mouser.es/datasheet/2/445/885012205027-554116.pdf</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_0402_2.2nF</field>
+        <field name="Footprint">ASISTE:C_0402</field>
+        <field name="Datasheet">https://www.mouser.es/datasheet/2/445/885012205027-554116.pdf</field>
+        <field name="man#">885012205027</field>
+        <field name="Capacitance">2.2nF</field>
+        <field name="Voltage">16V</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Asiste" part="C_0402_47nF">
+      <description>Multilayer Ceramic Capacitors MLCC - SMD/SMT WCAP-CSGP 47000pF 0402 10% 25V MLCC</description>
+      <docs>https://www.mouser.es/datasheet/2/445/885012205054-554192.pdf</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_0402_47nF</field>
+        <field name="Footprint">ASISTE:C_0402</field>
+        <field name="Datasheet">https://www.mouser.es/datasheet/2/445/885012205054-554192.pdf</field>
+        <field name="man#">885012205054</field>
+        <field name="Capacitance">47nF</field>
+        <field name="Voltage">25V</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Asiste" part="C_0603_1uF">
+      <description>Multilayer Ceramic Capacitors MLCC - SMD/SMT 1uF 10V X7R +/-10% 0603 AEC-Q200</description>
+      <docs>https://www.mouser.es/datasheet/2/396/mlcc02_e-1307760.pdf</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_0603_1uF</field>
+        <field name="Footprint">ASISTE:C_0603</field>
+        <field name="Datasheet">https://www.mouser.es/datasheet/2/396/mlcc02_e-1307760.pdf</field>
+        <field name="man#">LMK107B7105KAHT</field>
+        <field name="Capacitance">1uF</field>
+        <field name="Voltage">10V</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Asiste" part="C_0603_4.7uF">
+      <description>Multilayer Ceramic Capacitors MLCC - SMD/SMT 0603 10V 4.70uF X5R 10% Soft Term</description>
+      <docs>https://www.mouser.es/datasheet/2/400/lcc_commercial_soft_en-520032.pdf</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_0603_4.7uF</field>
+        <field name="Footprint">ASISTE:C_0603</field>
+        <field name="Datasheet">https://www.mouser.es/datasheet/2/400/lcc_commercial_soft_en-520032.pdf</field>
+        <field name="man#">C1608X5R1A475K080AE</field>
+        <field name="Capacitance">4.7uF</field>
+        <field name="Voltage">10V</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Asiste" part="Conn_01x02">
+      <description>Alojamientos de cables y cabecera WR-WTB SMT Male 1mm Shrouded Hztl2P</description>
+      <docs>https://katalog.we-online.com/em/datasheet/6651xx131822.pdf</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02</field>
+        <field name="Footprint">ASISTE:JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal</field>
+        <field name="Datasheet">https://katalog.we-online.com/em/datasheet/6651xx131822.pdf</field>
+        <field name="man#">665102131822</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Asiste" part="Crystal_3.2x1.5">
+      <description>Two pin crystalCristales 32.7680kHz 3.2 x 1.5 x 0.9mm</description>
+      <docs>https://www.mouser.es/datasheet/2/741/LFXTAL009706Bulk-940434.pdf</docs>
+      <footprints>
+        <fp>Crystal*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Y</field>
+        <field name="Value">Crystal_3.2x1.5</field>
+        <field name="Footprint">ASISTE:Crystal_SMD_G8-2Pin_3.2x1.5mm</field>
+        <field name="Datasheet">https://www.mouser.es/datasheet/2/741/LFXTAL009706Bulk-940434.pdf</field>
+        <field name="man#">LFXTAL009706Bulk</field>
+        <field name="Frecuency">32.7680 KHz</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Asiste" part="Crystal_GND24_2520">
+      <description>Crystals 16MHz 10pF 30ppm -40C +125C AEC-Q200</description>
+      <docs>https://www.mouser.es/datasheet/2/122/ECX-2236Q-938171.pdf</docs>
+      <footprints>
+        <fp>Crystal*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Y</field>
+        <field name="Value">Crystal_GND24_2520</field>
+        <field name="Footprint">ASISTE:Crystal_SMD_2520-4pin_2.5x2.0mm</field>
+        <field name="Datasheet">https://www.mouser.es/datasheet/2/122/ECX-2236Q-938171.pdf</field>
+        <field name="man#">ECS-160-10-36Q-ES-TR</field>
+        <field name="Frecuency">16MHz</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Asiste" part="DMP1045U">
+      <description>Transistor P-MOSFET with substrate diode (general)</description>
+      <docs>https://www.diodes.com/assets/Datasheets/DMP1045U.pdf</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">DMP1045U</field>
+        <field name="Footprint">ASISTE:SOT-23</field>
+        <field name="Datasheet">https://www.diodes.com/assets/Datasheets/DMP1045U.pdf</field>
+        <field name="man#">DMP1045U-7</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Asiste" part="D_Schottky">
+      <description>Schottky diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky</field>
+        <field name="Footprint">ASISTE:D_SOD-123</field>
+        <field name="Datasheet">https://www.diodes.com/assets/Datasheets/ds30308.pdf</field>
+        <field name="man#">B130LAW-7-F</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Asiste" part="LED_ARGB">
+      <description>LED RGB, common anode (pin 1)</description>
+      <docs>https://www.mouser.es/datasheet/2/90/CLMVC-FKC-1149316.pdf</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED_ARGB</field>
+        <field name="Footprint">ASISTE:LED_Cree-PLCC4_2x2mm_CW</field>
+        <field name="Datasheet">https://www.mouser.es/datasheet/2/90/CLMVC-FKC-1149316.pdf</field>
+        <field name="man#">CLMVC-FKC-CGJJM569aBB7a343</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="RK" type="passive"/>
+        <pin num="3" name="GK" type="passive"/>
+        <pin num="4" name="BK" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Asiste" part="L_0402_15nH">
+      <description>Fixed Inductors 0402 15nH 5%</description>
+      <docs>https://www.mouser.es/datasheet/2/400/nductor_commercial_high-frequency_mlk1005_en-918318.pdf</docs>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L_0402_15nH</field>
+        <field name="Footprint">ASISTE:L_0402</field>
+        <field name="Datasheet">https://www.mouser.es/datasheet/2/400/nductor_commercial_high-frequency_mlk1005_en-918318.pdf</field>
+        <field name="man#">MLK1005S15NJ</field>
+        <field name="Inductance">15nH</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Asiste" part="L_0402_2.7nH">
+      <description>Inductores fijos 2.7nH</description>
+      <docs>https://www.mouser.es/datasheet/2/611/jti-cat-rf-ind-844822.pdf</docs>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L_0402_2.7nH</field>
+        <field name="Footprint">ASISTE:L_0402</field>
+        <field name="Datasheet">https://www.mouser.es/datasheet/2/611/jti-cat-rf-ind-844822.pdf</field>
+        <field name="man#">L-07C2N7SV6T</field>
+        <field name="Inductance">2.7nH</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Asiste" part="L_0402_3.3nH">
+      <description>Inductores fijos 3.3nH</description>
+      <docs>https://www.mouser.es/datasheet/2/611/jti-cat-rf-ind-844822.pdf</docs>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L_0402_3.3nH</field>
+        <field name="Footprint">ASISTE:L_0402</field>
+        <field name="Datasheet">https://www.mouser.es/datasheet/2/611/jti-cat-rf-ind-844822.pdf</field>
+        <field name="man#">L-07C3N3SV6T</field>
+        <field name="Inductance">3.3nH</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Asiste" part="L_0603_10uH">
+      <description>Fixed Inductors 0603 10uH 20%</description>
+      <docs>https://www.mouser.es/datasheet/2/400/nductor_commercial_decoupling_mlz1608_en-837720.pdf</docs>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L_0603_10uH</field>
+        <field name="Footprint">ASISTE:L_0603</field>
+        <field name="Datasheet">https://www.mouser.es/datasheet/2/400/nductor_commercial_decoupling_mlz1608_en-837720.pdf</field>
+        <field name="man#">MLZ1608E100MT</field>
+        <field name="Inductance">10uH</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Asiste" part="MAX30105">
+      <description>Heart Rate Sensor, 14-OLGA</description>
+      <docs>https://datasheets.maximintegrated.com/en/ds/MAX30105.pdf</docs>
+      <footprints>
+        <fp>Maxim*OLGA*3.3x5.6mm*P0.8mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">MAX30105</field>
+        <field name="Footprint">ASISTE:Maxim_OLGA-14_3.3x5.6mm_P0.8mm</field>
+        <field name="Datasheet">https://datasheets.maximintegrated.com/en/ds/MAX30105.pdf</field>
+        <field name="man#">MAX30105EFD+</field>
+      </fields>
+      <pins>
+        <pin num="1" name="NC" type="NotConnected"/>
+        <pin num="2" name="SCL" type="input"/>
+        <pin num="3" name="SDA" type="BiDi"/>
+        <pin num="4" name="PGND" type="power_in"/>
+        <pin num="5" name="R_DRV" type="output"/>
+        <pin num="6" name="IR_DRV" type="output"/>
+        <pin num="7" name="G_DRV" type="output"/>
+        <pin num="8" name="NC" type="NotConnected"/>
+        <pin num="9" name="VLED+" type="power_in"/>
+        <pin num="10" name="VLED+" type="power_in"/>
+        <pin num="11" name="VDD" type="power_in"/>
+        <pin num="12" name="GND" type="power_in"/>
+        <pin num="13" name="~INT" type="output"/>
+        <pin num="14" name="NC" type="NotConnected"/>
+      </pins>
+    </libpart>
+    <libpart lib="Asiste" part="MCP73831">
+      <aliases>
+        <alias>MCP73832-5-OT</alias>
+        <alias>MCP73832-4-OT</alias>
+        <alias>MCP73832-3-OT</alias>
+        <alias>MCP73831-2-OT</alias>
+        <alias>MCP73831-5-OT</alias>
+        <alias>MCP73831-4-OT</alias>
+        <alias>MCP73831-3-OT</alias>
+      </aliases>
+      <description>Single cell, Li-Ion/Li-Po charge management controller, 4.20V, Open-Drain Status Output, in SOT23-5 package</description>
+      <docs>http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf</docs>
+      <footprints>
+        <fp>*SOT*23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MCP73831</field>
+        <field name="Footprint">ASISTE:TSOT-23-5</field>
+        <field name="Datasheet">http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf</field>
+        <field name="man#">MCP73831T-2ACI/OT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="STAT" type="output"/>
+        <pin num="2" name="VSS" type="power_in"/>
+        <pin num="3" name="VBAT" type="power_out"/>
+        <pin num="4" name="VDD" type="power_in"/>
+        <pin num="5" name="PROG" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Asiste" part="MPU-6050">
+      <description>IMUs - Inertial Measurement Units 6-Axis MEMS MotionTracking Device with DMP</description>
+      <docs>https://www.invensense.com/wp-content/uploads/2015/02/MPU-6000-Datasheet1.pdf</docs>
+      <footprints>
+        <fp>QFN*1EP*4x4mm*P0.5mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MPU-6050</field>
+        <field name="Footprint">ASISTE:QFN-24-1EP_4x4mm_Pitch0.5mm</field>
+        <field name="Datasheet">https://www.invensense.com/wp-content/uploads/2015/02/MPU-6000-Datasheet1.pdf</field>
+        <field name="man#">MPU-6050</field>
+      </fields>
+      <pins>
+        <pin num="1" name="CLKIN" type="input"/>
+        <pin num="6" name="AUX_SDA" type="BiDi"/>
+        <pin num="7" name="AUX_SCL" type="output"/>
+        <pin num="8" name="VDDIO" type="power_in"/>
+        <pin num="9" name="AD0" type="input"/>
+        <pin num="10" name="REGOUT" type="passive"/>
+        <pin num="11" name="FSYNC" type="input"/>
+        <pin num="12" name="INT" type="output"/>
+        <pin num="13" name="VDD" type="power_in"/>
+        <pin num="18" name="GND" type="power_in"/>
+        <pin num="20" name="CPOUT" type="passive"/>
+        <pin num="23" name="SCL" type="input"/>
+        <pin num="24" name="SDA" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="Asiste" part="R_0402_100">
+      <description>Resistores de película gruesa - SMD 0402 0.5% 100ohm Anti-Sulfur AEC-Q200</description>
+      <docs>https://www.mouser.es/datasheet/2/315/AOA0000C334-1314047.pdf</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_0402_100</field>
+        <field name="Footprint">ASISTE:R_0402</field>
+        <field name="Datasheet">https://www.mouser.es/datasheet/2/315/AOA0000C334-1314047.pdf</field>
+        <field name="man#">ERJ-U02D1000X</field>
+        <field name="Resistance">100</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Asiste" part="R_0402_100k">
+      <description>Resistores de película gruesa - SMD .063watt 100kohms 5% 0402 200ppm</description>
+      <docs>https://www.mouser.es/datasheet/2/427/rcge3-254226.pdf</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_0402_100k</field>
+        <field name="Footprint">ASISTE:R_0402</field>
+        <field name="Datasheet">https://www.mouser.es/datasheet/2/427/rcge3-254226.pdf</field>
+        <field name="man#">RCG0402100KJNED</field>
+        <field name="Resistance">100k</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Asiste" part="R_0402_10M">
+      <description>Thick Film Resistors 0402 10MOhm 5% Anti-Sulfur AEC-Q200</description>
+      <docs>https://www.mouser.es/datasheet/2/348/sfr-e-1099439.pdf</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_0402_10M</field>
+        <field name="Footprint">ASISTE:R_0402</field>
+        <field name="Datasheet">https://www.mouser.es/datasheet/2/348/sfr-e-1099439.pdf</field>
+        <field name="man#">SFR01MZPJ106</field>
+        <field name="Resistance">10M</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Asiste" part="R_0402_10k">
+      <description>Thick Film Resistors - SMD 0402 0.5% 10kOhm Anti-Sulfur AEC-Q200</description>
+      <docs>https://www.mouser.es/datasheet/2/315/AOA0000C334-1314047.pdf</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_0402_10k</field>
+        <field name="Footprint">ASISTE:R_0402</field>
+        <field name="Datasheet">https://www.mouser.es/datasheet/2/315/AOA0000C334-1314047.pdf</field>
+        <field name="man#">ERJ-U02D1002X</field>
+        <field name="Resistance">10k</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Asiste" part="R_0402_2M2">
+      <description>Thick Film Resistors 1/16watt 2.2Mohms 5%</description>
+      <docs>https://www.mouser.es/datasheet/2/427/dcrcwe3-109170.pdf</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_0402_2M2</field>
+        <field name="Footprint">ASISTE:R_0402</field>
+        <field name="Datasheet">https://www.mouser.es/datasheet/2/427/dcrcwe3-109170.pdf</field>
+        <field name="man#">CRCW04022M20JNED</field>
+        <field name="Resistance">2M2</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Asiste" part="R_0402_2k">
+      <description>Thick Film Resistors 1/16watt 2Kohms 5% Commercial Use</description>
+      <docs>https://www.mouser.es/datasheet/2/427/crcwce3-1223726.pdf</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_0402_2k</field>
+        <field name="Footprint">ASISTE:R_0402</field>
+        <field name="Datasheet">https://www.mouser.es/datasheet/2/427/crcwce3-1223726.pdf</field>
+        <field name="man#">CRCW04022K00JNEDC</field>
+        <field name="Resistance">2k</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Asiste" part="R_0402_33">
+      <description>TResistores de película fina - SMD 1/16W 33ohm 0.5% 100ppm</description>
+      <docs>https://www.mouser.es/datasheet/2/392/susumu_RR_Data_Sheet-1206438.pdf</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_0402_33</field>
+        <field name="Footprint">ASISTE:R_0402</field>
+        <field name="Datasheet">https://www.mouser.es/datasheet/2/392/susumu_RR_Data_Sheet-1206438.pdf</field>
+        <field name="man#">RR0510R-330-D</field>
+        <field name="Resistance">33</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Asiste" part="SMD_01x06">
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">SMD_01x06</field>
+        <field name="Footprint">ASISTE:SMD_PROG</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Asiste" part="SW_SPST">
+      <description>Interruptores táctiles TACT</description>
+      <docs>https://www.mouser.es/datasheet/2/60/pts810-1382876.pdf</docs>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_SPST</field>
+        <field name="Footprint">ASISTE:SW_SPST_PTS810</field>
+        <field name="Datasheet">https://www.mouser.es/datasheet/2/60/pts810-1382876.pdf</field>
+        <field name="man#">PTS810SJK250SMTRLFS</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Asiste" part="TMP112AIDRLR">
+      <description>SENSOR TEMP I2C/SMBUS SOT563</description>
+      <docs>http://www.ti.com/lit/ds/symlink/tmp112.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TMP112AIDRLR</field>
+        <field name="Footprint">ASISTE:SOT-563</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/tmp112.pdf</field>
+        <field name="man#">TMP112AIDRLR</field>
+      </fields>
+      <pins>
+        <pin num="1" name="SCL" type="input"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="ALERT" type="output"/>
+        <pin num="4" name="ADD0" type="power_in"/>
+        <pin num="5" name="V+" type="power_in"/>
+        <pin num="6" name="SDA" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="Asiste" part="USB_B_Micro">
+      <aliases>
+        <alias>USB_B_Mini</alias>
+      </aliases>
+      <description>USB Micro Type B connector</description>
+      <docs>https://www.mouser.es/datasheet/2/276/1050170001_IO_CONNECTORS-230168.pdf</docs>
+      <footprints>
+        <fp>USB*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">USB_B_Micro</field>
+        <field name="Footprint">ASISTE:USB_Micro-B_Molex-105017-0001</field>
+        <field name="Datasheet">https://www.mouser.es/datasheet/2/276/1050170001_IO_CONNECTORS-230168.pdf</field>
+        <field name="man#">105017-0001</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VBUS" type="power_out"/>
+        <pin num="2" name="D-" type="passive"/>
+        <pin num="3" name="D+" type="passive"/>
+        <pin num="4" name="ID" type="passive"/>
+        <pin num="5" name="GND" type="power_out"/>
+        <pin num="6" name="Shield" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Asiste" part="nRF51x22-QFxx">
+      <description>Sistemas RF en un chip (SoC) 2.4GHz BT low Energy 256KB Flash 16KB Ram</description>
+      <docs>http://www.nordicsemi.com/eng/Products/Bluetooth-R-low-energy/nRF51822/(language)/eng-GB</docs>
+      <footprints>
+        <fp>QFN*1EP*6x6mm*P0.4mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">nRF51x22-QFxx</field>
+        <field name="Footprint">ASISTE:QFN-48-1EP_6x6mm_Pitch0.4mm_ThermalVias</field>
+        <field name="Datasheet">https://www.nordicsemi.com/eng/Products/Bluetooth-low-energy/nRF51822/(language)/eng-GB</field>
+        <field name="man#">nRF51822-QFAA-R7</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VDD" type="power_in"/>
+        <pin num="2" name="DCC" type="power_out"/>
+        <pin num="3" name="P0.30" type="BiDi"/>
+        <pin num="4" name="P0.0" type="BiDi"/>
+        <pin num="5" name="P0.1" type="BiDi"/>
+        <pin num="6" name="P0.2" type="BiDi"/>
+        <pin num="7" name="P0.3" type="BiDi"/>
+        <pin num="8" name="P0.4" type="BiDi"/>
+        <pin num="9" name="P0.5" type="BiDi"/>
+        <pin num="10" name="P0.6" type="BiDi"/>
+        <pin num="11" name="P0.7" type="BiDi"/>
+        <pin num="12" name="VDD" type="passive"/>
+        <pin num="13" name="VSS" type="power_in"/>
+        <pin num="14" name="P0.8" type="BiDi"/>
+        <pin num="15" name="P0.9" type="BiDi"/>
+        <pin num="16" name="P0.10" type="BiDi"/>
+        <pin num="17" name="P0.11" type="BiDi"/>
+        <pin num="18" name="P0.12" type="BiDi"/>
+        <pin num="19" name="P0.13" type="BiDi"/>
+        <pin num="20" name="P0.14" type="BiDi"/>
+        <pin num="21" name="P0.15" type="BiDi"/>
+        <pin num="22" name="P0.16" type="BiDi"/>
+        <pin num="23" name="SWDIO/~RST" type="BiDi"/>
+        <pin num="24" name="SWDCLK" type="input"/>
+        <pin num="25" name="P0.17" type="BiDi"/>
+        <pin num="26" name="P0.18" type="BiDi"/>
+        <pin num="27" name="P0.19" type="BiDi"/>
+        <pin num="28" name="P0.20" type="BiDi"/>
+        <pin num="29" name="DEC2" type="passive"/>
+        <pin num="30" name="VDD_PA" type="power_out"/>
+        <pin num="31" name="ANT1" type="output"/>
+        <pin num="32" name="ANT2" type="output"/>
+        <pin num="33" name="VSS" type="passive"/>
+        <pin num="34" name="VSS" type="passive"/>
+        <pin num="35" name="AVDD" type="power_in"/>
+        <pin num="36" name="AVDD" type="passive"/>
+        <pin num="37" name="XC1" type="input"/>
+        <pin num="38" name="XC2" type="input"/>
+        <pin num="39" name="DEC1" type="passive"/>
+        <pin num="40" name="P0.21" type="BiDi"/>
+        <pin num="41" name="P0.22" type="BiDi"/>
+        <pin num="42" name="P0.23" type="BiDi"/>
+        <pin num="43" name="P0.24" type="BiDi"/>
+        <pin num="44" name="P0.25" type="BiDi"/>
+        <pin num="45" name="P0.26" type="BiDi"/>
+        <pin num="46" name="P0.27" type="BiDi"/>
+        <pin num="47" name="P0.28" type="BiDi"/>
+        <pin num="48" name="P0.29" type="BiDi"/>
+        <pin num="49" name="EP" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Asiste">
+      <uri>/home/julio/Dropbox/kicad/components/Asiste.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="VCC">
+      <node ref="PROG101" pin="1"/>
+      <node ref="C303" pin="1"/>
+      <node ref="C306" pin="1"/>
+      <node ref="D301" pin="1"/>
+      <node ref="U302" pin="3"/>
+      <node ref="U302" pin="2"/>
+      <node ref="Q301" pin="3"/>
+      <node ref="C101" pin="1"/>
+    </net>
+    <net code="2" name="+3V3">
+      <node ref="C607" pin="1"/>
+      <node ref="U601" pin="36"/>
+      <node ref="R603" pin="1"/>
+      <node ref="U601" pin="35"/>
+      <node ref="C606" pin="1"/>
+      <node ref="IC201" pin="9"/>
+      <node ref="IC201" pin="10"/>
+      <node ref="C605" pin="1"/>
+      <node ref="R601" pin="1"/>
+      <node ref="U601" pin="12"/>
+      <node ref="U601" pin="1"/>
+      <node ref="C202" pin="2"/>
+      <node ref="R602" pin="1"/>
+      <node ref="U401" pin="13"/>
+      <node ref="U401" pin="8"/>
+      <node ref="C304" pin="1"/>
+      <node ref="U401" pin="9"/>
+      <node ref="C402" pin="2"/>
+      <node ref="C401" pin="1"/>
+      <node ref="R402" pin="1"/>
+      <node ref="R401" pin="1"/>
+      <node ref="U302" pin="4"/>
+      <node ref="R501" pin="2"/>
+      <node ref="R502" pin="1"/>
+      <node ref="U501" pin="5"/>
+      <node ref="C610" pin="2"/>
+      <node ref="R503" pin="1"/>
+      <node ref="L604" pin="2"/>
+      <node ref="C501" pin="1"/>
+      <node ref="D101" pin="1"/>
+      <node ref="R104" pin="1"/>
+    </net>
+    <net code="3" name="/micro/BUTTON">
+      <node ref="U601" pin="25"/>
+      <node ref="R104" pin="2"/>
+      <node ref="SW101" pin="1"/>
+    </net>
+    <net code="4" name="GND">
+      <node ref="C302" pin="2"/>
+      <node ref="J301" pin="6"/>
+      <node ref="J302" pin="2"/>
+      <node ref="C501" pin="2"/>
+      <node ref="U401" pin="18"/>
+      <node ref="U401" pin="11"/>
+      <node ref="U501" pin="2"/>
+      <node ref="U501" pin="4"/>
+      <node ref="C402" pin="1"/>
+      <node ref="C401" pin="2"/>
+      <node ref="C403" pin="2"/>
+      <node ref="C404" pin="2"/>
+      <node ref="R303" pin="2"/>
+      <node ref="R301" pin="2"/>
+      <node ref="C609" pin="2"/>
+      <node ref="C607" pin="2"/>
+      <node ref="C602" pin="2"/>
+      <node ref="C606" pin="2"/>
+      <node ref="U601" pin="33"/>
+      <node ref="U601" pin="34"/>
+      <node ref="U601" pin="49"/>
+      <node ref="C603" pin="2"/>
+      <node ref="Y601" pin="2"/>
+      <node ref="U601" pin="13"/>
+      <node ref="C608" pin="2"/>
+      <node ref="C610" pin="1"/>
+      <node ref="U401" pin="1"/>
+      <node ref="C611" pin="1"/>
+      <node ref="C612" pin="1"/>
+      <node ref="Y601" pin="4"/>
+      <node ref="C605" pin="2"/>
+      <node ref="ANT601" pin="2"/>
+      <node ref="ANT601" pin="6"/>
+      <node ref="C604" pin="2"/>
+      <node ref="L602" pin="2"/>
+      <node ref="C301" pin="1"/>
+      <node ref="C306" pin="2"/>
+      <node ref="R304" pin="2"/>
+      <node ref="U302" pin="5"/>
+      <node ref="C303" pin="2"/>
+      <node ref="U301" pin="2"/>
+      <node ref="IC201" pin="12"/>
+      <node ref="IC201" pin="4"/>
+      <node ref="C201" pin="2"/>
+      <node ref="PROG101" pin="2"/>
+      <node ref="C305" pin="2"/>
+      <node ref="C304" pin="2"/>
+      <node ref="C101" pin="2"/>
+      <node ref="SW101" pin="2"/>
+      <node ref="J301" pin="5"/>
+      <node ref="C202" pin="1"/>
+    </net>
+    <net code="5" name="/micro/MCU_DEBUG_SWDIO">
+      <node ref="U601" pin="23"/>
+      <node ref="PROG101" pin="6"/>
+    </net>
+    <net code="6" name="/micro/MCU_DEBUG_SWCLK">
+      <node ref="PROG101" pin="5"/>
+      <node ref="U601" pin="24"/>
+    </net>
+    <net code="7" name="/micro/MPU_PROG_RX">
+      <node ref="U601" pin="15"/>
+      <node ref="PROG101" pin="4"/>
+    </net>
+    <net code="8" name="/micro/MCU_PROG_TX">
+      <node ref="U601" pin="17"/>
+      <node ref="PROG101" pin="3"/>
+    </net>
+    <net code="9" name="/imu/IMU_INT">
+      <node ref="U601" pin="20"/>
+      <node ref="U401" pin="12"/>
+    </net>
+    <net code="10" name="/micro/TMP_ALERT">
+      <node ref="R503" pin="2"/>
+      <node ref="U601" pin="7"/>
+      <node ref="U501" pin="3"/>
+    </net>
+    <net code="11" name="/heartRate/HR_~INT">
+      <node ref="Q203" pin="3"/>
+      <node ref="U601" pin="8"/>
+    </net>
+    <net code="12" name="/micro/BAT_SENSE">
+      <node ref="R303" pin="1"/>
+      <node ref="R302" pin="2"/>
+      <node ref="U601" pin="5"/>
+    </net>
+    <net code="13" name="/heartRate/HR_SCL">
+      <node ref="Q201" pin="3"/>
+      <node ref="U601" pin="10"/>
+      <node ref="R601" pin="2"/>
+    </net>
+    <net code="14" name="/heartRate/HR_SDA">
+      <node ref="R602" pin="2"/>
+      <node ref="R603" pin="2"/>
+      <node ref="U601" pin="9"/>
+      <node ref="Q202" pin="3"/>
+    </net>
+    <net code="15" name="/imu/IMU_SDA">
+      <node ref="U601" pin="18"/>
+      <node ref="R401" pin="2"/>
+      <node ref="R501" pin="1"/>
+      <node ref="U501" pin="6"/>
+      <node ref="U401" pin="24"/>
+    </net>
+    <net code="16" name="/imu/IMU_SCL">
+      <node ref="R402" pin="2"/>
+      <node ref="R502" pin="2"/>
+      <node ref="U401" pin="23"/>
+      <node ref="U501" pin="1"/>
+      <node ref="U601" pin="19"/>
+    </net>
+    <net code="17" name="/micro/PWR_EN">
+      <node ref="U302" pin="1"/>
+      <node ref="U601" pin="3"/>
+    </net>
+    <net code="18" name="/micro/BAT_CHG_STAT">
+      <node ref="U301" pin="1"/>
+      <node ref="U601" pin="21"/>
+    </net>
+    <net code="19" name="Net-(D101-Pad3)">
+      <node ref="D101" pin="3"/>
+      <node ref="R102" pin="1"/>
+    </net>
+    <net code="20" name="Net-(D101-Pad2)">
+      <node ref="D101" pin="2"/>
+      <node ref="R101" pin="1"/>
+    </net>
+    <net code="21" name="Net-(D101-Pad4)">
+      <node ref="D101" pin="4"/>
+      <node ref="R103" pin="1"/>
+    </net>
+    <net code="22" name="/micro/LED_BLUE">
+      <node ref="U601" pin="42"/>
+      <node ref="R101" pin="2"/>
+    </net>
+    <net code="23" name="/micro/LED_GREEN">
+      <node ref="U601" pin="40"/>
+      <node ref="R102" pin="2"/>
+    </net>
+    <net code="24" name="/micro/LED_RED">
+      <node ref="U601" pin="41"/>
+      <node ref="R103" pin="2"/>
+    </net>
+    <net code="25" name="+1V8">
+      <node ref="C201" pin="1"/>
+      <node ref="IC201" pin="11"/>
+      <node ref="Q203" pin="1"/>
+      <node ref="R201" pin="1"/>
+      <node ref="U302" pin="6"/>
+      <node ref="C305" pin="1"/>
+      <node ref="Q202" pin="1"/>
+      <node ref="R202" pin="2"/>
+      <node ref="R203" pin="1"/>
+      <node ref="Q201" pin="1"/>
+    </net>
+    <net code="26" name="Net-(IC201-Pad3)">
+      <node ref="IC201" pin="3"/>
+      <node ref="R202" pin="1"/>
+      <node ref="Q202" pin="2"/>
+    </net>
+    <net code="27" name="Net-(IC201-Pad2)">
+      <node ref="R201" pin="2"/>
+      <node ref="Q201" pin="2"/>
+      <node ref="IC201" pin="2"/>
+    </net>
+    <net code="28" name="Net-(IC201-Pad1)">
+      <node ref="IC201" pin="1"/>
+    </net>
+    <net code="29" name="Net-(IC201-Pad6)">
+      <node ref="IC201" pin="6"/>
+    </net>
+    <net code="30" name="Net-(IC201-Pad8)">
+      <node ref="IC201" pin="8"/>
+    </net>
+    <net code="31" name="Net-(IC201-Pad7)">
+      <node ref="IC201" pin="7"/>
+    </net>
+    <net code="32" name="Net-(IC201-Pad5)">
+      <node ref="IC201" pin="5"/>
+    </net>
+    <net code="33" name="Net-(IC201-Pad14)">
+      <node ref="IC201" pin="14"/>
+    </net>
+    <net code="34" name="Net-(IC201-Pad13)">
+      <node ref="IC201" pin="13"/>
+      <node ref="R203" pin="2"/>
+      <node ref="Q203" pin="2"/>
+    </net>
+    <net code="35" name="Net-(R301-Pad1)">
+      <node ref="R301" pin="1"/>
+      <node ref="U301" pin="5"/>
+    </net>
+    <net code="36" name="VBUS">
+      <node ref="Q301" pin="1"/>
+      <node ref="C301" pin="2"/>
+      <node ref="J301" pin="1"/>
+      <node ref="D301" pin="2"/>
+      <node ref="R304" pin="1"/>
+      <node ref="U301" pin="4"/>
+    </net>
+    <net code="37" name="Net-(J301-Pad2)">
+      <node ref="J301" pin="2"/>
+    </net>
+    <net code="38" name="Net-(J301-Pad3)">
+      <node ref="J301" pin="3"/>
+    </net>
+    <net code="39" name="Net-(J301-Pad4)">
+      <node ref="J301" pin="4"/>
+    </net>
+    <net code="40" name="VBAT">
+      <node ref="R302" pin="1"/>
+      <node ref="J302" pin="1"/>
+      <node ref="U301" pin="3"/>
+      <node ref="C302" pin="1"/>
+      <node ref="Q301" pin="2"/>
+    </net>
+    <net code="41" name="Net-(C403-Pad1)">
+      <node ref="U401" pin="10"/>
+      <node ref="C403" pin="1"/>
+    </net>
+    <net code="42" name="Net-(U401-Pad7)">
+      <node ref="U401" pin="7"/>
+    </net>
+    <net code="43" name="Net-(U401-Pad6)">
+      <node ref="U401" pin="6"/>
+    </net>
+    <net code="44" name="Net-(C404-Pad1)">
+      <node ref="C404" pin="1"/>
+      <node ref="U401" pin="20"/>
+    </net>
+    <net code="45" name="Net-(ANT601-Pad4)">
+      <node ref="U601" pin="31"/>
+      <node ref="ANT601" pin="4"/>
+    </net>
+    <net code="46" name="Net-(AE601-Pad1)">
+      <node ref="L601" pin="1"/>
+      <node ref="AE601" pin="1"/>
+    </net>
+    <net code="47" name="Net-(C601-Pad2)">
+      <node ref="L602" pin="1"/>
+      <node ref="L601" pin="2"/>
+      <node ref="C601" pin="2"/>
+    </net>
+    <net code="48" name="Net-(ANT601-Pad1)">
+      <node ref="C601" pin="1"/>
+      <node ref="ANT601" pin="1"/>
+    </net>
+    <net code="49" name="Net-(AE601-Pad2)">
+      <node ref="AE601" pin="2"/>
+    </net>
+    <net code="50" name="Net-(U601-Pad11)">
+      <node ref="U601" pin="11"/>
+    </net>
+    <net code="51" name="Net-(U601-Pad4)">
+      <node ref="U601" pin="4"/>
+    </net>
+    <net code="52" name="Net-(U601-Pad22)">
+      <node ref="U601" pin="22"/>
+    </net>
+    <net code="53" name="Net-(ANT601-Pad3)">
+      <node ref="U601" pin="32"/>
+      <node ref="ANT601" pin="3"/>
+    </net>
+    <net code="54" name="Net-(U601-Pad48)">
+      <node ref="U601" pin="48"/>
+    </net>
+    <net code="55" name="Net-(U601-Pad47)">
+      <node ref="U601" pin="47"/>
+    </net>
+    <net code="56" name="Net-(U601-Pad44)">
+      <node ref="U601" pin="44"/>
+    </net>
+    <net code="57" name="Net-(U601-Pad43)">
+      <node ref="U601" pin="43"/>
+    </net>
+    <net code="58" name="Net-(U601-Pad28)">
+      <node ref="U601" pin="28"/>
+    </net>
+    <net code="59" name="Net-(U601-Pad27)">
+      <node ref="U601" pin="27"/>
+    </net>
+    <net code="60" name="Net-(U601-Pad26)">
+      <node ref="U601" pin="26"/>
+    </net>
+    <net code="61" name="Net-(C612-Pad2)">
+      <node ref="U601" pin="46"/>
+      <node ref="C612" pin="2"/>
+      <node ref="Y602" pin="2"/>
+    </net>
+    <net code="62" name="Net-(C611-Pad2)">
+      <node ref="U601" pin="45"/>
+      <node ref="Y602" pin="1"/>
+      <node ref="C611" pin="2"/>
+    </net>
+    <net code="63" name="Net-(U601-Pad6)">
+      <node ref="U601" pin="6"/>
+    </net>
+    <net code="64" name="Net-(L603-Pad1)">
+      <node ref="L603" pin="1"/>
+      <node ref="U601" pin="2"/>
+    </net>
+    <net code="65" name="Net-(U601-Pad16)">
+      <node ref="U601" pin="16"/>
+    </net>
+    <net code="66" name="Net-(U601-Pad14)">
+      <node ref="U601" pin="14"/>
+    </net>
+    <net code="67" name="Net-(ANT601-Pad5)">
+      <node ref="C604" pin="1"/>
+      <node ref="ANT601" pin="5"/>
+      <node ref="U601" pin="30"/>
+    </net>
+    <net code="68" name="Net-(C602-Pad1)">
+      <node ref="U601" pin="37"/>
+      <node ref="Y601" pin="1"/>
+      <node ref="C602" pin="1"/>
+    </net>
+    <net code="69" name="Net-(C603-Pad1)">
+      <node ref="C603" pin="1"/>
+      <node ref="Y601" pin="3"/>
+      <node ref="U601" pin="38"/>
+    </net>
+    <net code="70" name="Net-(C608-Pad1)">
+      <node ref="C608" pin="1"/>
+      <node ref="U601" pin="29"/>
+    </net>
+    <net code="71" name="Net-(C609-Pad1)">
+      <node ref="U601" pin="39"/>
+      <node ref="C609" pin="1"/>
+    </net>
+    <net code="72" name="Net-(L603-Pad2)">
+      <node ref="L604" pin="1"/>
+      <node ref="L603" pin="2"/>
+    </net>
+  </nets>
+</export>
