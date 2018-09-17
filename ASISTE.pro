@@ -1,4 +1,4 @@
-update=Wed 05 Sep 2018 17:18:21 CEST
+update=Mon 17 Sep 2018 10:38:44 CEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -31,7 +31,7 @@ LibDir=
 [schematic_editor]
 version=1
 PageLayoutDescrFile=/home/julio/kicad/worksheets/asiste.kicad_wks
-PlotDirectoryName=
+PlotDirectoryName=/home/julio/Dropbox/proyecto/memoria/figuras/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=

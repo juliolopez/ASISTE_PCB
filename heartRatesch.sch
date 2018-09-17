@@ -15,10 +15,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Asiste:C_0603_4.7uF C2
+L Asiste:C_0603_4.7uF C1
 U 1 1 5B5650BB
 P 5750 2650
-F 0 "C2" H 5636 2604 50  0000 R CNN
+F 0 "C1" H 5636 2604 50  0000 R CNN
 F 1 "C_0603_4.7uF" H 5550 2100 50  0001 L CNN
 F 2 "ASISTE:C_0603" H 5800 2400 50  0001 C CNN
 F 3 "https://www.mouser.es/datasheet/2/400/lcc_commercial_soft_en-520032.pdf" H 6300 2300 50  0001 C CNN
@@ -300,10 +300,10 @@ F 4 "NTK3134NT1G" H 7850 3150 60  0001 L CNN "man#"
 	0    1    1    0   
 $EndComp
 $Comp
-L Asiste:C_0603_10uF C3
+L Asiste:C_0603_10uF C2
 U 1 1 5B94F806
 P 6050 2650
-F 0 "C3" H 6150 2700 50  0000 L CNN
+F 0 "C2" H 6150 2700 50  0000 L CNN
 F 1 "C_0603_10uF" H 5850 2000 50  0001 L CNN
 F 2 "ASISTE:C_0603" H 6100 2400 50  0001 C CNN
 F 3 "https://eu.mouser.com/datasheet/2/281/murata_03052018_GRM_Series_1-1310166.pdf" H 6600 2300 50  0001 C CNN
